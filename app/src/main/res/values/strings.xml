@@ -1,12 +1,342 @@
 <resources>
-    <string name="app_name">Duelendar_version1</string>
+    <string name="app_name">App</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="App_title">Dulendar</string>
+
+    <!-- main -->
+    <string name="IBSetting">setting</string>
+    <string name="IVSchoolImage">SchoolImage</string>
+    <string name="BDefaultSubject">默认学科</string>
+    <string name="IVDefaultSubject">SubjectImage</string>
+    <string name="BOther">其它</string>
+    <string name="IBDeleteSubject">IBDeleteSubject</string>
+    <string name="BAddSubject">添加学科</string>
+
+    <!-- delete_subject_pop -->
+    <string name="BClearSubject">删除此学科(包括作业内容)</string>
+    <string name="BCheckSubject">修改作业名称</string>
+    <string name="BCancelClearSubject">取消</string>
+
+    <!-- delete_subject_sure_or_not -->
+    <string name="TDeleteSubjectSureOrNot">确认删除？</string>
+    <string name="BSureDeleteSubject">确认</string>
+    <string name="BCancelSureDeleteSubject">取消</string>
+
+    <!-- setting -->
+    <string name="IBSettingReturnMain">return</string>
+    <string name="TSetting">设置</string>
+    <string name="BTargetTimeZone">更改我的目标时区（大学所在时区）</string>
+    <string name="BLocalTimeZone">更改我的所在时区（默认：中国）</string>
+    <string name="BBackgroundImage">更改界面背景图</string>
+
+    <!-- activity_createsubject -->
+    <!-- activity_checksubject -->
+    <string name="IBCreateSubjectReturnMain">return</string>
+    <string name="TSubjectName">学科名称</string>
+    <string name="TSubjectLogo">你的个性图标</string>
+    <string name="IBComputer">IBComputer</string>
+    <string name="IBEconomy">IBEconomy</string>
+    <string name="IBEngineering">IBEngineering</string>
+    <string name="IBEnglish">IBEnglish</string>
+    <string name="IBMedicalScience">IBMedicalScience</string>
+    <string name="IBBiology">IBBiology</string>
+    <string name="IBBusiness">IBBusiness</string>
+    <string name="IBChemistry">IBChemistry</string>
+    <string name="IBFinance">IBFinance</string>
+    <string name="IBPhysics">IBPhysics</string>
+    <string name="IBLaw">IBLaw</string>
+    <string name="IBMath">IBMath</string>
+    <string name="IBMusic">IBMusic</string>
+    <string name="IBPerformance">IBPerformance</string>
+    <string name="IBArt">IBArt</string>
+    <string name="IBDrawingAndPainting">IBDrawingAndPainting</string>
+    <string name="IBPsychology">IBPsychology</string>
+    <string name="IBAgriculture">IBAgriculture</string>
+    <string name="IBAnimalScience">IBAnimalScience</string>
+    <string name="IBAnimationDesign">IBAnimationDesign</string>
+    <string name="IBArchitecture">IBArchitecture</string>
+    <string name="IBAstronomy">IBAstronomy</string>
+    <string name="IBAutomobile">IBAutomobile</string>
+    <string name="IBCultureStudy">IBCultureStudy</string>
+    <string name="IBDatabase">IBDatabase</string>
+    <string name="IBEducation">IBEducation</string>
+    <string name="IBEnvironmentalScience">IBEnvironmentalScience</string>
+    <string name="IBFilm">IBFilm</string>
+    <string name="IBFood">IBFood</string>
+    <string name="IBHealth">IBHealth</string>
+    <string name="IBHistory">IBHistory</string>
+    <string name="IBHorticulture">IBHorticulture</string>
+    <string name="IBInvestment">IBInvestment</string>
+    <string name="IBLanguage">IBLanguage</string>
+    <string name="IBLiterature">IBLiterature</string>
+    <string name="IBManagement">IBManagement</string>
+    <string name="IBNewsAndMedia">IBNewsAndMedia</string>
+    <string name="IBPhilosophy">IBPhilosophy</string>
+    <string name="IBPhotography">IBPhotography</string>
+    <string name="IBPolitics">IBPolitics</string>
+    <string name="IBSocialScience">IBSocialScience</string>
+    <string name="IBSpeaking">IBSpeaking</string>
+    <string name="IBStatistics">IBStatistics</string>
+    <string name="IBTheater">IBTheater</string>
+    <string name="IBTrading">IBTrading</string>
+    <string name="IBUrbanPlanning">IBUrbanPlanning</string>
+    <string name="IBWebPageDesign">IBWebPageDesign</string>
+    <string name="IBWriting">IBWriting</string>
+    <string name="BCreateSubject">创建</string>
+
+    <!-- activity_checksubject -->
+    <string name="IBCheckSubjectReturnMain">return</string>
+    <string name="TCheckSubjectName">学科名称</string>
+    <string name="TCheckSubjectLogo">你的个性图标</string>
+    <string name="BChangeSubject">修改</string>
+
+    <!-- activity_createhomework -->
+    <string name="IBCreateHwReturnHwUndone">return</string>
+    <string name="THwName">作业名称</string>
+    <string name="THwDueDate">作业截至时间（美国时间）</string>
+    <string name="PTYear">YYYY</string>
+    <string name="TVYearNote">/</string>
+    <string name="PTMonth">MM</string>
+    <string name="TVMonthNote">/</string>
+    <string name="PTDay">DD</string>
+    <string name="PTHour">HR</string>
+    <string name="TVHour">: </string>
+    <string name="PTMinute">MI</string>
+    <string name="TVHint">填写24小时制</string>
+    <string name="TVPrior">提前</string>
+    <string name="TVRemind">提醒</string>
+    <string name="TVHourNote">时</string>
+    <string name="TVMinuteNote">分</string>
+    <string name="THwLocation">修改作业发生地（默认美国）</string>
+    <string name="THwNotification">设置提醒</string>
+    <string name="THwMemo">备注</string>
+    <string name="BCreateHw">创建</string>
+
+    <!-- check homework-->
+    <string name="IBCheckHwReturnHw">return</string>
+    <string name="TCheckHwName">作业名称</string>
+    <string name="TCheckHwDueDate">作业截至时间（美国时间）</string>
+    <string name="TCheckHwLocation">修改作业发生地（默认美国）</string>
+    <string name="TCheckHwNotification">设置提醒</string>
+    <string name="TCheckHwMemo">备注</string>
+    <string name="BChangeHw">修改</string>
+    <string name="BDeleteHw">删除作业</string>
+
+    <!-- activity_createevent -->
+    <string name="IBCreateEventReturnUnfinishEvent">return</string>
+    <string name="TEventName">事件名称</string>
+    <string name="TEventDueDate">事件截至时间（中国时间）</string>
+    <string name="TEventLocation">更改事件发生地（默认中国）</string>
+    <string name="TEventNotification">设置提醒</string>
+    <string name="TEventMemo">备注</string>
+    <string name="BCreateEvent">创建</string>
+
+    <!-- activity_schoollogo -->
+    <string name="IBSchoolLogoReturnMain">return</string>
+    <string name="BSchoolMissing">未找到自己的学校？</string>
+    <string name="BPrinceton">美国普林斯顿大学</string>
+    <string name="BHarvard">美国哈佛大学</string>
+    <string name="BOxford">英国牛津大学</string>
+    <string name="BCambridge">英国剑桥大学</string>
+    <string name="BYale">美国耶鲁大学</string>
+    <string name="BMIT">美国麻省理工大学</string>
+    <string name="BColumbia">美国哥伦比亚大学</string>
+    <string name="BUChicago">美国芝加哥大学</string>
+    <string name="BETHZurich">瑞士苏黎世联邦理工学院</string>
+    <string name="BImperial">英国帝国理工学院</string>
+    <string name="BUCL">英国伦敦大学学院</string>
+    <string name="BUPennsylvania">美国宾夕法尼亚大学</string>
+    <string name="BNUS">新加坡国立大学</string>
+    <string name="BNanyang">新加坡南阳理工大学</string>
+    <string name="BEPFL">瑞士洛桑联邦理工学院</string>
+    <string name="BEdinburgh">英国爱丁堡大学</string>
+    <string name="BUTokyo">日本东京大学</string>
+    <string name="BStanford">美国斯坦福大学</string>
+    <string name="BNWU">美国西北大学</string>
+    <string name="BJHU">美国约翰霍普金斯大学</string>
+    <string name="BDuke">美国杜克大学</string>
+    <string name="BCIT">美国加州理工大学</string>
+    <string name="BDartmouth">美国达特茅斯学院</string>
+    <string name="BBrown">美国布朗大学</string>
+    <string name="BNotreDame">美国圣母大学</string>
+    <string name="BVanderbilt">美国范德堡大学</string>
+    <string name="BRice">美国莱斯大学</string>
+    <string name="BCornell">美国康奈尔大学</string>
+    <string name="BUWSL">美国华盛顿大学圣路易斯分校</string>
+    <string name="BUCLA">美国加州大学洛杉矶分校</string>
+    <string name="BEmory">美国埃默里大学</string>
+    <string name="BUCBerkeley">美国加州大学伯克利分校</string>
+    <string name="BUSC">美国南加州大学</string>
+    <string name="BGeorgetown">美国乔治城大学</string>
+    <string name="BCMU">美国卡耐基梅隆大学</string>
+    <string name="BUToronto">加拿大多伦多大学</string>
+    <string name="BUManchester">英国曼彻斯特大学</string>
+    <string name="BAustralianNational">澳大利亚国立大学</string>
+    <string name="BKings">英国伦敦国王学院</string>
+    <string name="BMcGill">加拿大麦吉尔大学</string>
+    <string name="BSeoul">韩国首尔大学</string>
+    <string name="BKyoto">日本京都大学</string>
+    <string name="BUMichiganArbor">美国密歇根大学安娜堡分校</string>
+    <string name="BWakeForrest">美国维克森林大学</string>
+    <string name="BUVirginia">美国弗吉尼亚大学</string>
+    <string name="BTufts">美国塔夫茨大学</string>
+    <string name="BUNorthCarolinaChapelHill">美国北卡罗来纳大学教堂山分校</string>
+    <string name="BGIT">美国佐治亚理工学院</string>
+    <string name="BRochester">美国罗彻斯特大学</string>
+    <string name="BNYU">美国纽约大学</string>
+    <string name="BUFlorida">美国佛罗里达大学</string>
+    <string name="BUCSB">美国加州大学圣塔芭芭拉分校</string>
+    <string name="BUCI">美国加州大学欧文分校</string>
+    <string name="BBC">美国波士顿学院</string>
+    <string name="BUCSD">美国加州大学圣地亚哥分校</string>
+    <string name="BUCDavis">美国加州大学戴维斯分校</string>
+    <string name="BKAIST">韩国科学技术院</string>
+    <string name="BUSydney">澳大利亚悉尼大学</string>
+    <string name="BUMelbourne">澳大利亚墨尔本大学</string>
+    <string name="BUNSW">澳大利亚新南威尔士大学</string>
+    <string name="BUQueensland">澳大利亚昆士兰大学</string>
+    <string name="BMonash">澳大利亚蒙纳士大学</string>
+    <string name="BLSE">英国伦敦政治经济学院</string>
+    <string name="BWarwick">英国华威大学</string>
+    <string name="BMunichTechnical">德国慕尼黑工业大学</string>
+    <string name="BLMUM">德国慕尼黑大学</string>
+    <string name="BRKUH">德国海德堡大学</string>
+    <string name="BPSL">法国巴黎文理研究大学</string>
+    <string name="BTokyoIT">日本东京工业大学</string>
+    <string name="BDelft">荷兰代尔夫特理工大学</string>
+    <string name="BUM">马来西亚马来亚大学</string>
+    <string name="BWilliamAndMary">美国威廉玛丽学院</string>
+    <string name="BBrandeis">美国布兰迪斯大学</string>
+    <string name="BBU">美国波士顿大学</string>
+    <string name="BCaseWesternReserve">美国凯斯西储大学</string>
+    <string name="BTulane">美国杜兰大学</string>
+    <string name="BNEU">美国东北大学</string>
+    <string name="BUWMadison">美国威斯康星大学麦迪逊分校</string>
+    <string name="BVillanova">美国维拉诺瓦大学</string>
+    <string name="BUTAustin">美国德克萨斯大学奥斯汀分校</string>
+    <string name="BUIUC">美国伊利诺伊大学香槟分校</string>
+    <string name="BRensselaer">美国伦斯勒理工学院</string>
+    <string name="BPepperdine">美国佩珀代因大学</string>
+    <string name="BLehigh">美国理海大学</string>
+    <string name="BOhioState">美国俄亥俄州立大学</string>
+    <string name="BSantaClara">美国圣塔克拉拉大学</string>
+
+
+    <!-- check event-->
+    <string name="IBCheckEventReturnEvent">return</string>
+    <string name="TCheckEventName">事件名称</string>
+    <string name="TCheckEventDueDate">事件截至时间（中国时间）</string>
+    <string name="TCheckEventLocation">更改事件发生地（默认中国）</string>
+    <string name="TCheckEventNotification">设置提醒</string>
+    <string name="TCheckEventMemo">备注</string>
+    <string name="BChangeEvent">修改</string>
+    <string name="BDeleteEvent">删除事件</string>
+
+    <!-- subject_unfinish-->
+    <string name="IBUnfinishHwReturnMain">return</string>
+    <string name="IBDeleteAllHw">delete</string>
+    <string name="TDefaultSubject">默认学科</string>
+    <string name="BToBeDone">待完成</string>
+    <string name="BDone">已完成</string>
+    <string name="BPastDueHw">作业:过时15分钟</string>
+    <string name="SPastDueHwSwitch">已完成?</string>
+    <string name="BDefaultHwUndone">默认作业:距离截止15分钟</string>
+    <string name="SDefaultHwUndoneSwitch">已完成?</string>
+    <string name="BAddHw">添加作业</string>
+
+
+    <!-- event_unfinish-->
+    <string name="IBEventUnfinishReturnMain">return</string>
+    <string name="IBDeleteAllEvent">delete</string>
+    <string name="BPastDueEvent">事件：过时15分钟</string>
+    <string name="BDefaultEventUndone">默认事件</string>
+    <string name="BAddEvent">添加事件</string>
+
+    <!-- clear_hw_pop-->
+    <string name="BClearFinishHw">一键清除已完成作业</string>
+    <string name="BCancelDeleteHw">取消</string>
+
+    <!-- clear_event_pop-->
+    <string name="BClearFinishEvent">一键清除已完成事件</string>
+    <string name="BCancelDeleteEvent">取消</string>
+
+    <!-- clear_done_hw_sure_or_not-->
+    <string name="TClearSureOrNot">确认删除？</string>
+    <string name="BSureClear">确认</string>
+    <string name="BCancelSureClear">取消</string>
+
+    <!-- clear_done_event_sure_or_not-->
+    <string name="TClearEventSureOrNot">确认删除？</string>
+    <string name="BSureClearEvent">确认</string>
+    <string name="BCancelSureClearEvent">取消</string>
+
+    <!-- delete_hw_sure_or_not-->
+    <string name="TDeleteSureOrNot">确认删除？</string>
+    <string name="BSureDelete">确认</string>
+    <string name="BCancelSureDelete">取消</string>
+
+    <!-- delete_event_sure_or_not-->
+    <string name="TDeleteEventSureOrNot">确认删除？</string>
+    <string name="BSureDeleteEvent">确认</string>
+    <string name="BCancelSureDeleteEvent">取消</string>
+
+    <!-- activity_foreign_country-->
+    <string name="IBForeignCountryReturnMain">return</string>
+    <string name="BChina">中国时间</string>
+    <string name="BUSAWest">美国/加拿大西部时间</string>
+    <string name="BUSAMidwest">美国/加拿大中西部时间</string>
+    <string name="BUSAMideast">美国/加拿大中东部时间</string>
+    <string name="BUSAEast">美国/加拿大东部时间</string>
+    <string name="BUK">英国时间</string>
+    <string name="BAusWest">澳大利亚西部时间</string>
+    <string name="BAusMid">澳大利亚中部时间</string>
+    <string name="BAusEast">澳大利亚东部时间</string>
+    <string name="BSingapore">新加坡时间</string>
+    <string name="BGermany">德国时间</string>
+    <string name="BFrance">法国时间</string>
+    <string name="BJapan">日本时间</string>
+    <string name="BKorea">韩国时间</string>
+    <string name="BItaly">意大利时间</string>
+    <string name="BArabia">阿拉伯时间</string>
+    <string name="BMalaysia">马来西亚时间</string>
+    <string name="BIndia">印度时间</string>
+    <string name="BMexico">墨西哥时间</string>
+    <string name="BRussia">俄罗斯时间</string>
+
+    <string name="IChina">中国国旗</string>
+    <string name="IAmerica">美国国旗</string>
+    <string name="ICanada">加拿大国旗</string>
+    <string name="IUK">英国国旗</string>
+    <string name="IAustralia">澳大利亚国旗</string>
+    <string name="ISingapore">新加坡国旗</string>
+    <string name="IGermany">德国国旗</string>
+    <string name="IFrance">法国国旗</string>
+    <string name="IJapan">日本国旗</string>
+    <string name="IKorea">韩国国旗</string>
+    <string name="IItaly">意大利国旗</string>
+    <string name="IArabia">阿拉伯国旗</string>
+    <string name="IMalaysia">马来西亚国旗</string>
+    <string name="IIndia">印度国旗</string>
+    <string name="IMexico">墨西哥国旗</string>
+    <string name="IRussia">俄罗斯国旗</string>
+
+
+    <!-- activity_changebackground -->
+    <string name="IBBG1">星空背景</string>
+    <string name="IBBG2">纯黑背景</string>
+    <string name="IBBG3">蓝色银河背景</string>
+    <string name="IBBG4">月牙背景</string>
+    <string name="IBBG5">黑洞背景</string>
+    <string name="IBBG6">森林背景</string>
+    <string name="IBBG7">雪山背景</string>
+    <string name="IBBG8">湖面背景</string>
+
+
 </resources>

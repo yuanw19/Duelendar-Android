@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/HwMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD"
+    android:orientation="vertical"
+    tools:context=".View.UnfinishHwInterface">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/TBSubjectUnfinish"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:title="Duelendar"
+            app:titleMarginStart="155dp"
+            app:titleTextColor="#100101" />
+
+        <ImageButton
+            android:id="@+id/IBUnfinishHwReturnMain"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="#64FFDA"
+            android:contentDescription="@string/IBUnfinishHwReturnMain"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/abc_vector_test"
+            tools:ignore="PrivateResource" />
+
+        <ImageButton
+            android:id="@+id/IBAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@id/TBSubjectUnfinish"
+            app:srcCompat="@android:drawable/ic_menu_add" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/TDefaultSubject"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#69F0AE"
+        android:gravity="center"
+        android:text="@string/TDefaultSubject"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/BToBeDone"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:text="@string/BToBeDone" />
+
+        <Button
+            android:id="@+id/BDone"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/BToBeDone"
+            android:text="@string/BDone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/HwUnfinishLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp">
+
+                <Button
+                    android:id="@+id/BPastDueHw"
+                    android:layout_width="299dp"
+                    android:layout_height="match_parent"
+                    android:background="#FF5252"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/BPastDueHw"
+                    android:textAllCaps="false"
+                    android:textSize="30sp" />
+
+                <Switch
+                    android:id="@+id/SPastDueHwSwitch"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="2dp"
+                    android:layout_toEndOf="@id/BPastDueHw"
+                    android:text="@string/SPastDueHwSwitch" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/BDefaultHwUndone"
+                    android:layout_width="298dp"
+                    android:layout_height="match_parent"
+                    android:gravity="start"
+                    android:text="@string/BDefaultHwUndone"
+                    android:textSize="23sp" />
+
+                <Switch
+                    android:id="@+id/SDefaultHwUndoneSwitch"
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignEnd="@id/BDefaultHwUndone"
+                    android:layout_marginEnd="-3dp"
+                    android:elevation="50dp"
+                    android:showText="true"
+                    android:text="@string/SDefaultHwUndoneSwitch"
+                    android:textOff="sdf"
+                    android:textOn="qwe" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/BAddHw"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/BAddHw"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
