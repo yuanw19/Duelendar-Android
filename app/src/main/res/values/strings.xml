@@ -37,7 +37,7 @@
     <string name="BBackgroundImage">更改界面背景图</string>
 
     <!-- activity_createsubject -->
-    <!-- activity_checksubject -->
+    <string name="TCreateSubjectDuelendar">duelendar</string>
     <string name="IBCreateSubjectReturnMain">return</string>
     <string name="TSubjectName">学科名称</string>
     <string name="TSubjectLogo">你的个性图标</string>
@@ -239,17 +239,21 @@
     <string name="BChangeEvent">修改</string>
     <string name="BDeleteEvent">删除事件</string>
 
-    <!-- subject_unfinish-->
+
+    <!-- event-->
     <string name="IBUnfinishHwReturnMain">return</string>
-    <string name="IBDeleteAllHw">delete</string>
+    <string name="IBAdd">添加作业</string>
     <string name="TDefaultSubject">默认学科</string>
+    <string name="IBDeleteAllHw">delete</string>
+    <string name="BDefault1">默认作业1</string>
+    <string name="BDefault2">默认作业2</string>
     <string name="BToBeDone">待完成</string>
     <string name="BDone">已完成</string>
     <string name="BPastDueHw">作业:过时15分钟</string>
     <string name="SPastDueHwSwitch">已完成?</string>
     <string name="BDefaultHwUndone">默认作业:距离截止15分钟</string>
     <string name="SDefaultHwUndoneSwitch">已完成?</string>
-    <string name="BAddHw">添加作业</string>
+
 
 
     <!-- event_unfinish-->

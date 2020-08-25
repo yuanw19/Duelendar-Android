@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".View.CreateSubject">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/TBCreateSubject"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/BCreateSubject"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:titleTextColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/TCreateSubjectDuelendar"
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/TCreateSubjectDuelendar"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/IBCreateSubjectReturnMain"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="#0064FFDA"
+            android:contentDescription="@string/IBCreateSubjectReturnMain"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/abc_vector_test"
+            tools:ignore="PrivateResource" />
+
+        <Button
+            android:id="@+id/BCreateSubject"
+            android:layout_width="76dp"
+            android:layout_height="42dp"
+            android:layout_alignRight="@id/TBCreateSubject"
+            android:layout_centerVertical="true"
+            android:background="#00FFFFFF"
+            android:gravity="center"
+            android:text="@string/BCreateSubject"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/TSubjectName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="no"
+        android:background="@drawable/et_style"
+        android:hint="@string/TSubjectName"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/TVSubjectLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/TSubjectLogo"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#FFFFFF" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1268dp">
+
+                <ImageButton
+                    android:id="@+id/IBComputer"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:contentDescription="@string/IBComputer"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBComputer"
+                    app:srcCompat="@drawable/computer" />
+
+                <ImageButton
+                    android:id="@+id/IBEconomy"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignEnd="@id/IBComputer"
+                    android:layout_marginEnd="-94dp"
+                    android:contentDescription="@string/IBEconomy"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBEconomy"
+                    app:srcCompat="@drawable/economy" />
+
+                <ImageButton
+                    android:id="@+id/IBEngineering"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignEnd="@id/IBEconomy"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="-95dp"
+                    android:contentDescription="@string/IBEngineering"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBEngineering"
+                    app:srcCompat="@drawable/engineering" />
+
+                <ImageButton
+                    android:id="@+id/IBEnglish"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignEnd="@id/IBEngineering"
+                    android:layout_marginEnd="-94dp"
+                    android:contentDescription="@string/IBEnglish"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBEnglish"
+                    app:srcCompat="@drawable/english" />
+
+                <ImageButton
+                    android:id="@+id/IBMedicalScience"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignBottom="@id/IBComputer"
+                    android:layout_marginBottom="-94dp"
+                    android:contentDescription="@string/IBMedicalScience"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBMedicalScience"
+                    app:srcCompat="@drawable/medical_science" />
+
+                <ImageButton
+                    android:id="@+id/IBBiology"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_below="@id/IBEconomy"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toEndOf="@id/IBMedicalScience"
+                    android:contentDescription="@string/IBBiology"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBBiology"
+                    app:srcCompat="@drawable/biology" />
+
+                <ImageButton
+                    android:id="@+id/IBBusiness"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_below="@id/IBEngineering"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toEndOf="@id/IBBiology"
+                    android:contentDescription="@string/IBBusiness"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBBusiness"
+                    app:srcCompat="@drawable/business" />
+
+                <ImageButton
+                    android:id="@+id/IBChemistry"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_below="@id/IBEnglish"
+                    android:layout_alignEnd="@id/IBBusiness"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="-94dp"
+                    android:contentDescription="@string/IBChemistry"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBChemistry"
+                    app:srcCompat="@drawable/chemistry" />
+
+                <ImageButton
+                    android:id="@+id/IBFinance"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignBottom="@id/IBMedicalScience"
+                    android:layout_marginTop="-129dp"
+                    android:layout_marginBottom="-95dp"
+                    android:contentDescription="@string/IBFinance"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBFinance"
+                    app:srcCompat="@drawable/finance" />
+
+                <ImageButton
+                    android:id="@+id/IBPhysics"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_below="@id/IBChemistry"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toEndOf="@id/IBFinance"
+                    android:contentDescription="@string/IBPhysics"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBPhysics"
+                    app:srcCompat="@drawable/physics" />
+
+                <ImageButton
+                    android:id="@+id/IBLaw"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_below="@id/IBBusiness"
+                    android:layout_alignEnd="@id/IBPhysics"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="-94dp"
+                    android:contentDescription="@string/IBLaw"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBLaw"
+                    app:srcCompat="@drawable/law" />
+
+                <ImageButton
+                    android:id="@+id/IBMath"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_below="@id/IBChemistry"
+                    android:layout_alignEnd="@id/IBLaw"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="-94dp"
+                    android:contentDescription="@string/IBMath"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBMath"
+                    app:srcCompat="@drawable/math" />
+
+                <ImageButton
+                    android:id="@+id/IBMusic"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignBottom="@id/IBFinance"
+                    android:layout_marginBottom="-95dp"
+                    android:contentDescription="@string/IBMusic"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBMusic"
+                    app:srcCompat="@drawable/music" />
+
+                <ImageButton
+                    android:id="@+id/IBPerformance"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_below="@id/IBPhysics"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toEndOf="@id/IBMusic"
+                    android:contentDescription="@string/IBPerformance"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBPerformance"
+                    app:srcCompat="@drawable/performance" />
+
+                <ImageButton
+                    android:id="@+id/IBArt"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_below="@id/IBLaw"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toEndOf="@id/IBPerformance"
+                    android:contentDescription="@string/IBArt"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBArt"
+                    app:srcCompat="@drawable/art" />
+
+                <ImageButton
+                    android:id="@+id/IBDrawingAndPainting"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_below="@id/IBMath"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toEndOf="@id/IBArt"
+                    android:contentDescription="@string/IBDrawingAndPainting"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBDrawingAndPainting"
+                    app:srcCompat="@drawable/drawing_and_painting" />
+
+                <ImageButton
+                    android:id="@+id/IBPsychology"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignBottom="@id/IBMusic"
+                    android:layout_marginBottom="-94dp"
+                    android:contentDescription="@string/IBPsychology"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBPsychology"
+                    app:srcCompat="@drawable/psychology" />
+
+                <ImageButton
+                    android:id="@+id/IBAgriculture"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_below="@id/IBPerformance"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toEndOf="@id/IBPsychology"
+                    android:contentDescription="@string/IBAgriculture"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBAgriculture"
+                    app:srcCompat="@drawable/agriculture" />
+
+                <ImageButton
+                    android:id="@+id/IBAnimalScience"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_below="@id/IBArt"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toEndOf="@id/IBAgriculture"
+                    android:contentDescription="@string/IBAnimalScience"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBAnimalScience"
+                    app:srcCompat="@drawable/animal_science" />
+
+                <ImageButton
+                    android:id="@+id/IBAnimationDesign"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_below="@id/IBDrawingAndPainting"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toEndOf="@id/IBAnimalScience"
+                    android:contentDescription="@string/IBAnimationDesign"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBAnimationDesign"
+                    app:srcCompat="@drawable/animation_design" />
+
+                <ImageButton
+                    android:id="@+id/IBArchitecture"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignBottom="@id/IBPsychology"
+                    android:layout_marginBottom="-95dp"
+                    android:contentDescription="@string/IBArchitecture"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBArchitecture"
+                    app:srcCompat="@drawable/architecture" />
+
+                <ImageButton
+                    android:id="@+id/IBAstronomy"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_below="@id/IBAgriculture"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toEndOf="@id/IBArchitecture"
+                    android:contentDescription="@string/IBAstronomy"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBAstronomy"
+                    app:srcCompat="@drawable/astronomy" />
+
+                <ImageButton
+                    android:id="@+id/IBAutomobile"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_below="@id/IBAnimalScience"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toEndOf="@id/IBAstronomy"
+                    android:contentDescription="@string/IBAutomobile"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBAutomobile"
+                    app:srcCompat="@drawable/automobile_driving_and_engineering" />
+
+                <ImageButton
+                    android:id="@+id/IMCultureStudy"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_below="@id/IBAnimationDesign"
+                    android:layout_alignEnd="@id/IBAutomobile"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="-94dp"
+                    android:contentDescription="@string/IBCultureStudy"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBCultureStudy"
+                    app:srcCompat="@drawable/culture_study" />
+
+                <ImageButton
+                    android:id="@+id/IBDatabase"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignBottom="@id/IBArchitecture"
+                    android:layout_marginBottom="-94dp"
+                    android:contentDescription="@string/IBDatabase"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBDatabase"
+                    app:srcCompat="@drawable/database_design_and_application" />
+
+                <ImageButton
+                    android:id="@+id/IBEducation"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_below="@id/IBAstronomy"
+                    android:layout_alignEnd="@id/IBDatabase"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="-94dp"
+                    android:layout_toEndOf="@id/IBDatabase"
+                    android:contentDescription="@string/IBEducation"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBEducation"
+                    app:srcCompat="@drawable/education" />
+
+                <ImageButton
+                    android:id="@+id/IBEnvironmentalScience"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_alignEnd="@id/IBLaw"
+                    android:layout_alignBottom="@id/IBEducation"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="1dp"
+                    android:contentDescription="@string/IBEnvironmentalScience"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBEnvironmentalScience"
+                    app:srcCompat="@drawable/environmental_science" />
+
+                <ImageButton
+                    android:id="@+id/IBFilm"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignStart="@id/IBEnglish"
+                    android:layout_alignBottom="@id/IBEnvironmentalScience"
+                    android:contentDescription="@string/IBFilm"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBFilm"
+                    app:srcCompat="@drawable/film" />
+
+                <ImageButton
+                    android:id="@+id/IBFood"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignBottom="@id/IBDatabase"
+                    android:layout_marginBottom="-94dp"
+                    android:contentDescription="@string/IBFood"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBFood"
+                    app:srcCompat="@drawable/food_science" />
+
+                <ImageButton
+                    android:id="@+id/IBHealth"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignStart="@id/IBEconomy"
+                    android:layout_alignTop="@id/IBFood"
+                    android:contentDescription="@string/IBHealth"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBHealth"
+                    app:srcCompat="@drawable/health" />
+
+                <ImageButton
+                    android:id="@+id/IBHistory"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignStart="@id/IBEngineering"
+                    android:layout_alignTop="@id/IBFood"
+                    android:contentDescription="@string/IBHistory"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBHistory"
+                    app:srcCompat="@drawable/history" />
+
+                <ImageButton
+                    android:id="@+id/IBHorticulture"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignStart="@id/IBEnglish"
+                    android:layout_alignTop="@id/IBFood"
+                    android:contentDescription="@string/IBHorticulture"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBHorticulture"
+                    app:srcCompat="@drawable/horticulture" />
+
+                <ImageButton
+                    android:id="@+id/IBInvestment"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignBottom="@id/IBFood"
+                    android:layout_marginBottom="-95dp"
+                    android:contentDescription="@string/IBInvestment"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBInvestment"
+                    app:srcCompat="@drawable/investment" />
+
+                <ImageButton
+                    android:id="@+id/IBLanguage"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignStart="@id/IBEconomy"
+                    android:layout_alignTop="@id/IBInvestment"
+                    android:contentDescription="@string/IBLanguage"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBLanguage"
+                    app:srcCompat="@drawable/language" />
+
+                <ImageButton
+                    android:id="@+id/IBLiterature"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignStart="@id/IBEngineering"
+                    android:layout_alignTop="@id/IBInvestment"
+                    android:contentDescription="@string/IBLiterature"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBLiterature"
+                    app:srcCompat="@drawable/literature" />
+
+                <ImageButton
+                    android:id="@+id/IBManagement"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignStart="@id/IBEnglish"
+                    android:layout_alignTop="@id/IBInvestment"
+                    android:contentDescription="@string/IBManagement"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBManagement"
+                    app:srcCompat="@drawable/management" />
+
+                <ImageButton
+                    android:id="@+id/IBNewsAndMedia"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignBottom="@id/IBInvestment"
+                    android:layout_marginBottom="-95dp"
+                    android:contentDescription="@string/IBNewsAndMedia"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBNewsAndMedia"
+                    app:srcCompat="@drawable/news_and_media" />
+
+                <ImageButton
+                    android:id="@+id/IBPhilosophy"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignStart="@id/IBEconomy"
+                    android:layout_alignTop="@id/IBNewsAndMedia"
+                    android:contentDescription="@string/IBPhilosophy"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBPhilosophy"
+                    app:srcCompat="@drawable/philosophy" />
+
+                <ImageButton
+                    android:id="@+id/IDPhotography"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignStart="@id/IBEngineering"
+                    android:layout_alignTop="@id/IBNewsAndMedia"
+                    android:contentDescription="@string/IBPhotography"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBPhotography"
+                    app:srcCompat="@drawable/photography" />
+
+                <ImageButton
+                    android:id="@+id/IBPolitics"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignStart="@id/IBEnglish"
+                    android:layout_alignTop="@id/IBNewsAndMedia"
+                    android:contentDescription="@string/IBPolitics"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBPolitics"
+                    app:srcCompat="@drawable/politic" />
+
+                <ImageButton
+                    android:id="@+id/IBSocialScience"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignBottom="@id/IBNewsAndMedia"
+                    android:layout_marginBottom="-95dp"
+                    android:contentDescription="@string/IBSocialScience"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBSocialScience"
+                    app:srcCompat="@drawable/social_science" />
+
+                <ImageButton
+                    android:id="@+id/IBSpeaking"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignStart="@id/IBEconomy"
+                    android:layout_alignTop="@id/IBSocialScience"
+                    android:contentDescription="@string/IBSpeaking"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBSpeaking"
+                    app:srcCompat="@drawable/speaking" />
+
+                <ImageButton
+                    android:id="@+id/IBStatistics"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignStart="@id/IBEngineering"
+                    android:layout_alignTop="@id/IBSocialScience"
+                    android:contentDescription="@string/IBStatistics"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBStatistics"
+                    app:srcCompat="@drawable/statistics" />
+
+                <ImageButton
+                    android:id="@+id/IBTheater"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignStart="@id/IBEnglish"
+                    android:layout_alignTop="@id/IBSocialScience"
+                    android:contentDescription="@string/IBTheater"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBTheater"
+                    app:srcCompat="@drawable/theater_and_drama" />
+
+                <ImageButton
+                    android:id="@+id/IBTrading"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignBottom="@id/IBSocialScience"
+                    android:layout_marginBottom="-96dp"
+                    android:contentDescription="@string/IBTrading"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBTrading"
+                    app:srcCompat="@drawable/trading" />
+
+                <ImageButton
+                    android:id="@+id/IBUrbanPlanning"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignStart="@id/IBEconomy"
+                    android:layout_alignTop="@id/IBTrading"
+                    android:contentDescription="@string/IBUrbanPlanning"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBUrbanPlanning"
+                    app:srcCompat="@drawable/urban_planning" />
+
+                <ImageButton
+                    android:id="@+id/IBWebPageDesign"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignStart="@id/IBEngineering"
+                    android:layout_alignTop="@id/IBTrading"
+                    android:contentDescription="@string/IBWebPageDesign"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBWebPageDesign"
+                    app:srcCompat="@drawable/webpage_design" />
+
+                <ImageButton
+                    android:id="@+id/IBWriting"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_alignStart="@id/IBEnglish"
+                    android:layout_alignTop="@id/IBTrading"
+                    android:contentDescription="@string/IBWebPageDesign"
+                    android:scaleType="fitCenter"
+                    android:text="@string/IBWriting"
+                    app:srcCompat="@drawable/writing" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
