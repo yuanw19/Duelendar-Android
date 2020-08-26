@@ -11,13 +11,23 @@
     <string name="App_title">Dulendar</string>
 
     <!-- main -->
+    <string name="TBMain">主界面工具栏</string>
+    <string name="TTitle">Duelendar</string>
     <string name="IBSetting">setting</string>
-    <string name="IVSchoolImage">SchoolImage</string>
-    <string name="BDefaultSubject">默认学科</string>
+    <string name="BAddSubject">添加学科</string>
+    <string name="IBSchoolImage">SchoolImage</string>
+    <string name="BDefaultSubject1">默认学科1</string>
+    <string name="IBOption1">默认学科1三点</string>
+    <string name="BDefaultSubject2">默认学科2</string>
+    <string name="IBOption2">默认学科2三点</string>
+    <string name="BDefaultSubject3">默认学科3</string>
+    <string name="IBOption3">默认学科3三点</string>
+    <string name="BDefaultSubject4">默认学科4</string>
+    <string name="IBOption4">默认学科4三点</string>
     <string name="IVDefaultSubject">SubjectImage</string>
     <string name="BOther">其它</string>
     <string name="IBDeleteSubject">IBDeleteSubject</string>
-    <string name="BAddSubject">添加学科</string>
+
 
     <!-- delete_subject_pop -->
     <string name="BClearSubject">删除此学科(包括作业内容)</string>
@@ -37,10 +47,10 @@
     <string name="BBackgroundImage">更改界面背景图</string>
 
     <!-- activity_createsubject -->
-    <string name="TCreateSubjectDuelendar">duelendar</string>
+    <string name="TCreateSubjectDuelendar">Duelendar</string>
     <string name="IBCreateSubjectReturnMain">return</string>
     <string name="TSubjectName">学科名称</string>
-    <string name="TSubjectLogo">你的个性图标</string>
+    <string name="TSubjectLogo">选择学科图标</string>
     <string name="IBComputer">IBComputer</string>
     <string name="IBEconomy">IBEconomy</string>
     <string name="IBEngineering">IBEngineering</string>

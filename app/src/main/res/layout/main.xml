@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:contentDescription="@string/IBOption1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00FFFFFF"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/TBMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/TBMain"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme" />
+
+            <TextView
+                android:id="@+id/TTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/TTitle"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp" />
+
+            <ImageButton
+                android:id="@+id/IBSetting"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/IBSetting"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/whsetting" />
+
+            <ImageButton
+                android:id="@+id/BAddSubject"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignRight="@id/TBMain"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/BAddSubject"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/plus" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageButton
+                android:id="@+id/IBSchoolImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/schooldefault" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+
+            <Button
+                android:id="@+id/BDefaultSubject1"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="#80FF0000"
+                android:contentDescription="@string/BDefaultSubject1"
+                android:text="@string/BDefaultSubject1"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/IBOption1"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_alignRight="@id/BDefaultSubject1"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/IBOption1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/wdot" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+
+            <Button
+                android:id="@+id/BDefaultSubject2"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="#80002AFF"
+                android:contentDescription="@string/BDefaultSubject2"
+                android:text="@string/BDefaultSubject2"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/IBOption2"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_alignRight="@id/BDefaultSubject2"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/IBOption2"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/wdot" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+
+            <Button
+                android:id="@+id/BDefaultSubject3"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="#80FFEB3B"
+                android:contentDescription="@string/BDefaultSubject3"
+                android:text="@string/BDefaultSubject3"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/IBOption3"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_alignRight="@id/BDefaultSubject3"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/IBOption3"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/wdot" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+
+            <Button
+                android:id="@+id/BDefaultSubject4"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="#8000D12D"
+                android:contentDescription="@string/BDefaultSubject4"
+                android:text="@string/BDefaultSubject4"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/IBOption4"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_alignRight="@id/BDefaultSubject4"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/IBOption4s"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/wdot" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

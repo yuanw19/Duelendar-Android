@@ -100,7 +100,7 @@
                     android:layout_width="93dp"
                     android:layout_height="93dp"
                     android:contentDescription="@string/IBComputer"
-                    android:scaleType="fitCenter"
+                    android:scaleType="fitXY"
                     android:text="@string/IBComputer"
                     app:srcCompat="@drawable/computer" />
 
