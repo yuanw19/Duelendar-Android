@@ -252,8 +252,10 @@
 
     <!-- event-->
     <string name="IBUnfinishHwReturnMain">return</string>
+    <string name="TBSubjectUnfinish">未完成的作业</string>
     <string name="IBAdd">添加作业</string>
     <string name="TDefaultSubject">默认学科</string>
+    <string name="IVefaultSubject">默认学科图标</string>
     <string name="IBDeleteAllHw">delete</string>
     <string name="BDefault1">默认作业1</string>
     <string name="BDefault2">默认作业2</string>

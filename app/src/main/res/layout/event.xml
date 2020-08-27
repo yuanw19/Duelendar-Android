@@ -51,18 +51,32 @@
 
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/TDefaultSubject"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/et_style"
-        android:gravity="center"
-        android:text="@string/TDefaultSubject"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp" />
+        android:layout_height="58dp">
+
+        <TextView
+            android:id="@+id/TDefaultSubject"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/et_style"
+            android:gravity="center"
+            android:text="@string/TDefaultSubject"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/IVDefaultSubject"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/IVDefaultSubject"
+            android:src="@drawable/subject" />
+
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
