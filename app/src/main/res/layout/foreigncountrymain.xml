@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp">
+
+            <ImageButton
+                android:id="@+id/IBForeignCountryMainReturnMain"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/IBForeignCountryMainReturnMain"
+                app:srcCompat="@drawable/abc_vector_test" />
+
+            <TextView
+                android:id="@+id/TForeignCountryMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/TForeignCountryMain"
+                android:text="@string/TForeignCountryMain"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp">
+
+            <EditText
+                android:id="@+id/PTSearchTimeZone"
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="#F4F4F4"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="@string/PTSearchTimeZone" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IAmerica"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/IAmerica1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/america" />
+
+                    <Button
+                        android:id="@+id/BUSAWest"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/IAmerica"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BUSAWest"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BUSAWest"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IAmerica2"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/IAmerica2"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/america" />
+
+                    <Button
+                        android:id="@+id/BUSAMidWest"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/IAmerica2"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BUSAWest"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BUSAMidWest"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IAmerica3"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/IAmerica3"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/america" />
+
+                    <Button
+                        android:id="@+id/BUSAMidEast"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/IAmerica3"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BUSAMidEast"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BUSAMidEast"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IAmerica4"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/IAmerica4"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/america" />
+
+                    <Button
+                        android:id="@+id/BUSAEast"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/IAmerica4"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BUSAEast"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BUSAEast"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/ICanada1"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/ICanada1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/canada" />
+
+                    <Button
+                        android:id="@+id/BCanadaPST"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/ICanada1"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BCanadaPST"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BCanadaPST"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/ICanada2"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/ICanada2"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/canada" />
+
+                    <Button
+                        android:id="@+id/BCanadaMST"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/ICanada2"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BCanadaMST"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BCanadaMST"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/ICanada3"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/ICanada3"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/canada" />
+
+                    <Button
+                        android:id="@+id/BCanadaCST"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/ICanada3"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BCanadaCST"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BCanadaCST"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/ICanada4"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/ICanada4"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/canada" />
+
+                    <Button
+                        android:id="@+id/BCanadaEST"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/ICanada4"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BCanadaEST"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BCanadaEST"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/ICanada5"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/ICanada5"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/canada" />
+
+                    <Button
+                        android:id="@+id/BCanadaAST"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/ICanada5"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BCanadaAST"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BCanadaAST"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/ICanada6"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/ICanada6"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/canada" />
+
+                    <Button
+                        android:id="@+id/BCanadaNST"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/ICanada6"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BCanadaNST"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BCanadaNST"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IAustralia1"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/IAustralia1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/australia" />
+
+                    <Button
+                        android:id="@+id/BAusAWST"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/IAustralia1"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BAusAWST"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BAusAWST"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IAustralia2"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/IAustralia2"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/australia" />
+
+                    <Button
+                        android:id="@+id/BAusACWST"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/IAustralia2"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BAusACWST"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BAusACWST"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IAustralia3"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/IAustralia3"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/australia" />
+
+                    <Button
+                        android:id="@+id/BAusACST"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/IAustralia3"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BAusACST"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BAusACST"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IAustralia4"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/IAustralia4"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/australia" />
+
+                    <Button
+                        android:id="@+id/BAusAEST"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/IAustralia4"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BAusAEST"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BAusAEST"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IAustralia5"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/IAustralia5"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/australia" />
+
+                    <Button
+                        android:id="@+id/BAusLHST"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/IAustralia5"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BAusLHST"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BAusLHST"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IUK"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/IUK"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/uk" />
+
+                    <Button
+                        android:id="@+id/BUK"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/IUK"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BUK"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BUK"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IJapan"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/IJapan"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/japan" />
+
+                    <Button
+                        android:id="@+id/BJapan"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/IJapan"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BJapan"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BJapan"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

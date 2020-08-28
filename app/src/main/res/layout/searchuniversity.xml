@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/BHarvard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp">
+
+            <ImageButton
+                android:id="@+id/IBSearchUniversityReturnMain"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/IBSearchUniversityReturnMain"
+                android:scaleType="center"
+                app:srcCompat="@drawable/abc_vector_test" />
+
+            <TextView
+                android:id="@+id/TVSearchUniversityDuelendarT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/TVSearchUniversityDuelendar"
+                android:text="@string/TVSearchUniversityDuelendar"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="289dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="#FFF9F9"
+                android:contentDescription="@string/PTSearchUniversity"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="@string/PTSearchUniversity" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/IViewTitleA"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="false"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="90dp"
+                android:contentDescription="@string/IViewTitleA"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/darkgreybuttom" />
+
+            <ImageView
+                android:id="@+id/IViewTitleB"
+                android:layout_width="242dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="93dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="13dp"
+                android:contentDescription="@string/IViewTitleB"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/greybuttom" />
+
+            <TextView
+                android:id="@+id/TVSearchUniversity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/TVSearchUniversity"
+                android:text="@string/TVSearchUniversity"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/BHarvard"
+                    android:layout_width="300dp"
+                    android:layout_height="62dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/BHarvard"
+                    android:text="@string/BHarvard" />
+
+                <Button
+                    android:id="@+id/BPrinceton"
+                    android:layout_width="300dp"
+                    android:layout_height="62dp"
+                    android:layout_below="@id/BHarvard"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/BPrinceton"
+                    android:text="@string/BPrinceton" />
+
+                <Button
+                    android:id="@+id/BOxford"
+                    android:layout_width="300dp"
+                    android:layout_height="62dp"
+                    android:layout_below="@id/BPrinceton"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/BOxford"
+                    android:text="@string/BOxford" />
+
+                <Button
+                    android:id="@+id/BCambridge"
+                    android:layout_width="300dp"
+                    android:layout_height="62dp"
+                    android:layout_below="@id/BOxford"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/BCambridge"
+                    android:text="@string/BCambridge" />
+            </RelativeLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

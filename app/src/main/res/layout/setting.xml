@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/IBSettingReturnMain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginBottom="30dp">
+
+            <ImageButton
+                android:id="@+id/IBSettingReturnMain"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/IBSettingReturnMain"
+                app:srcCompat="@drawable/abc_vector_test" />
+
+            <TextView
+                android:id="@+id/TSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/TSetting"
+                android:text="@string/TSetting"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp">
+
+            <Button
+                android:id="@+id/BSchoolTimeZone"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:layout_centerInParent="true"
+                android:background="#80ECBD14"
+                android:contentDescription="@string/BSchoolTimeZone"
+                android:text="@string/BSchoolTimeZone"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp">
+
+            <Button
+                android:id="@+id/BLocalTimeZone"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:layout_centerInParent="true"
+                android:background="#80ECBD14"
+                android:contentDescription="@string/BLocalTimeZone"
+                android:text="@string/BLocalTimeZone"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp">
+
+            <Button
+                android:id="@+id/BBackgroundImage"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:layout_centerInParent="true"
+                android:background="#80ECBD14"
+                android:contentDescription="@string/BBackgroundImage"
+                android:text="@string/BBackgroundImage"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp">
+
+            <Button
+                android:id="@+id/BSchool"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:layout_centerInParent="true"
+                android:background="#80ECBD14"
+                android:contentDescription="@string/BSchool"
+                android:text="@string/BSchool"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
