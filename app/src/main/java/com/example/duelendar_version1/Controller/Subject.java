@@ -24,6 +24,7 @@ public class Subject extends AppCompatActivity {
     private Button CreateSubject;
     private ImageButton IBComputer;
     private ImageButton IBEconomy;
+    private ImageButton IBEngineering;
     private String ColorString = "#FFA500";
     private ImageButton TempLogo;
     private EditText ETSubjectName;
@@ -56,6 +57,17 @@ public class Subject extends AppCompatActivity {
                 }
                 IBEconomy.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBEconomy;
+            }
+        });
+        IBEngineering = (ImageButton) findViewById(R.id.IBEngineering);
+        IBEngineering.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (TempLogo != null) {
+                    TempLogo.setBackgroundResource(android.R.drawable.btn_default);
+                }
+                IBEngineering.setBackgroundColor(Color.parseColor(ColorString));
+                TempLogo = IBEngineering;
             }
         });
         //
