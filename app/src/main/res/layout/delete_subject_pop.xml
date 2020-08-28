@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/BClearSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SureDeleteSubjectPopup"
+        android:text="@string/BClearSubject" />
+
+    <Button
+        android:id="@+id/BCheckSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="DeleteSubjectCheckSubject"
+        android:text="@string/BCheckSubject" />
+
+    <Button
+        android:id="@+id/BCancelClearSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF3D00"
+        android:onClick="DeleteSubjectDismiss"
+        android:text="@string/BCancelClearSubject" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="130dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TDeleteSubjectSureOrNot"
+        android:layout_width="250dp"
+        android:layout_height="61dp"
+        android:text="@string/TDeleteSureOrNot" />
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="60dp">
+
+        <Button
+            android:id="@+id/BSureDeleteSubject"
+            android:layout_width="125dp"
+            android:layout_height="190dp"
+            android:onClick="SureDeleteSubjectDismiss"
+            android:text="@string/BSureDelete" />
+
+        <Button
+            android:id="@+id/BCancelSureDeleteSubject"
+            android:layout_width="125dp"
+            android:layout_height="190dp"
+            android:layout_marginStart="125dp"
+            android:onClick="CancelDeleteSubjectDismiss"
+            android:text="@string/BCancelSureDelete" />
+    </RelativeLayout>
+</LinearLayout>

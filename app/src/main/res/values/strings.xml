@@ -102,12 +102,6 @@
     <string name="IBWriting">IBWriting</string>
     <string name="BCreateSubject">创建</string>
 
-    <!-- activity_checksubject -->
-    <string name="IBCheckSubjectReturnMain">return</string>
-    <string name="TCheckSubjectName">学科名称</string>
-    <string name="TCheckSubjectLogo">你的个性图标</string>
-    <string name="BChangeSubject">修改</string>
-
     <!-- activity_createhomework -->
     <string name="IBCreateHwReturnHwUndone">return</string>
     <string name="THwName">作业名称</string>

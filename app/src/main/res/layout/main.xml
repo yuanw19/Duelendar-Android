@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    android:contentDescription="@string/IBOption1">
+    android:contentDescription="@string/IBOption1"
+    tools:context=".Controller.Main">
 
     <LinearLayout
+        android:id="@+id/Main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#00FFFFFF"
@@ -73,128 +76,140 @@
                 app:srcCompat="@drawable/schooldefault" />
         </RelativeLayout>
 
-        <RelativeLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="130dp">
+            android:layout_height="match_parent">
 
-            <Button
-                android:id="@+id/BDefaultSubject1"
-                android:layout_width="290dp"
-                android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="30dp"
-                android:background="#80FF0000"
-                android:contentDescription="@string/BDefaultSubject1"
-                android:text="@string/BDefaultSubject1"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp" />
+            <LinearLayout
+                android:id="@+id/SubjectLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/IBOption1"
-                android:layout_width="40dp"
-                android:layout_height="30dp"
-                android:layout_alignRight="@id/BDefaultSubject1"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="8dp"
-                android:background="#00FFFFFF"
-                android:contentDescription="@string/IBOption1"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/wdot" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp">
 
-        </RelativeLayout>
+                    <Button
+                        android:id="@+id/BDefaultSubject1"
+                        android:layout_width="290dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="#80FF0000"
+                        android:contentDescription="@string/BDefaultSubject1"
+                        android:text="@string/BDefaultSubject1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="130dp">
+                    <ImageButton
+                        android:id="@+id/IBOption1"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_alignRight="@id/BDefaultSubject1"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="@string/IBOption1"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/wdot" />
 
-            <Button
-                android:id="@+id/BDefaultSubject2"
-                android:layout_width="290dp"
-                android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="30dp"
-                android:background="#80002AFF"
-                android:contentDescription="@string/BDefaultSubject2"
-                android:text="@string/BDefaultSubject2"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp" />
+                </RelativeLayout>
 
-            <ImageButton
-                android:id="@+id/IBOption2"
-                android:layout_width="40dp"
-                android:layout_height="30dp"
-                android:layout_alignRight="@id/BDefaultSubject2"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="8dp"
-                android:background="#00FFFFFF"
-                android:contentDescription="@string/IBOption2"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/wdot" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp">
 
-        </RelativeLayout>
+                    <Button
+                        android:id="@+id/BDefaultSubject2"
+                        android:layout_width="290dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="#80002AFF"
+                        android:contentDescription="@string/BDefaultSubject2"
+                        android:text="@string/BDefaultSubject2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="130dp">
+                    <ImageButton
+                        android:id="@+id/IBOption2"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_alignRight="@id/BDefaultSubject2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="@string/IBOption2"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/wdot" />
 
-            <Button
-                android:id="@+id/BDefaultSubject3"
-                android:layout_width="290dp"
-                android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="30dp"
-                android:background="#80FFEB3B"
-                android:contentDescription="@string/BDefaultSubject3"
-                android:text="@string/BDefaultSubject3"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp" />
+                </RelativeLayout>
 
-            <ImageButton
-                android:id="@+id/IBOption3"
-                android:layout_width="40dp"
-                android:layout_height="30dp"
-                android:layout_alignRight="@id/BDefaultSubject3"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="8dp"
-                android:background="#00FFFFFF"
-                android:contentDescription="@string/IBOption3"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/wdot" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp">
 
-        </RelativeLayout>
+                    <Button
+                        android:id="@+id/BDefaultSubject3"
+                        android:layout_width="290dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="#80FFEB3B"
+                        android:contentDescription="@string/BDefaultSubject3"
+                        android:text="@string/BDefaultSubject3"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="130dp">
+                    <ImageButton
+                        android:id="@+id/IBOption3"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_alignRight="@id/BDefaultSubject3"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="@string/IBOption3"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/wdot" />
 
-            <Button
-                android:id="@+id/BDefaultSubject4"
-                android:layout_width="290dp"
-                android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="30dp"
-                android:background="#8000D12D"
-                android:contentDescription="@string/BDefaultSubject4"
-                android:text="@string/BDefaultSubject4"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp" />
+                </RelativeLayout>
 
-            <ImageButton
-                android:id="@+id/IBOption4"
-                android:layout_width="40dp"
-                android:layout_height="30dp"
-                android:layout_alignRight="@id/BDefaultSubject4"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="8dp"
-                android:background="#00FFFFFF"
-                android:contentDescription="@string/IBOption4s"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/wdot" />
-        </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp">
+
+                    <Button
+                        android:id="@+id/BDefaultSubject4"
+                        android:layout_width="290dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="#8000D12D"
+                        android:contentDescription="@string/BDefaultSubject4"
+                        android:text="@string/BDefaultSubject4"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/IBOption4"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_alignRight="@id/BDefaultSubject4"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="@string/IBOption4"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/wdot" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
