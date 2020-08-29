@@ -48,10 +48,19 @@
     <string name="BSchool">选择我的学校</string>
 
     <!-- activity_createsubject -->
-    <string name="TCreateSubjectDuelendar">Duelendar</string>
+    <string name="TCreateSubjectDuelendar">添加学科</string>
     <string name="IBCreateSubjectReturnMain">return</string>
     <string name="TSubjectName">学科名称</string>
+    <string name="ETSubjectName">未填写</string>
     <string name="TSubjectLogo">选择学科图标</string>
+    <string name="TSubjectColor">选择学科图标底色</string>
+    <string name="IBRed">红</string>
+    <string name="IBBlue">蓝</string>
+    <string name="IBYellow">黄</string>
+    <string name="IBGreen">绿</string>
+    <string name="IBPink">粉</string>
+    <string name="IBPurple">紫</string>
+
     <string name="IBComputer">IBComputer</string>
     <string name="IBEconomy">IBEconomy</string>
     <string name="IBEngineering">IBEngineering</string>
@@ -100,7 +109,9 @@
     <string name="IBUrbanPlanning">IBUrbanPlanning</string>
     <string name="IBWebPageDesign">IBWebPageDesign</string>
     <string name="IBWriting">IBWriting</string>
-    <string name="BCreateSubject">创建</string>
+
+    <string name="ICreateSubject">确认创建背景</string>
+    <string name="BCreateSubject">确认创建</string>
 
     <!-- activity_createhomework -->
     <string name="IBCreateHwReturnHwUndone">return</string>

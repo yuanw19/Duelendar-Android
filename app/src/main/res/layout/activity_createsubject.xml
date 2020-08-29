@@ -46,35 +46,38 @@
             tools:ignore="PrivateResource"
             android:layout_marginStart="15dp" />
 
-        <Button
-            android:id="@+id/BCreateSubject"
-            android:layout_width="76dp"
-            android:layout_height="42dp"
-            android:layout_alignRight="@id/TBCreateSubject"
-            android:layout_centerVertical="true"
-            android:background="#00FFFFFF"
-            android:gravity="center"
-            android:text="@string/BCreateSubject"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:layout_alignEnd="@id/TBCreateSubject" />
     </RelativeLayout>
 
-    <EditText
-        android:id="@+id/TSubjectName"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:autofillHints="no"
-        android:background="@drawable/et_style"
-        android:hint="@string/TSubjectName"
-        android:inputType="text"
-        android:padding="10dp"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF" />
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/TSubjectName"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/TSubjectName"
+            android:gravity="center"
+            android:text="@string/TSubjectName"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/ETSubjectName"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/TSubjectName"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/ETSubjectName"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </RelativeLayout>
 
     <TextView
-        android:id="@+id/TVSubjectLogo"
+        android:id="@+id/TSubjectLogo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -86,7 +89,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="270dp"
+        android:layout_marginBottom="20dp"
+        android:background="#FFFFFF">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -101,6 +106,7 @@
                     android:id="@+id/IBComputer"
                     android:layout_width="93dp"
                     android:layout_height="93dp"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBComputer"
                     android:scaleType="fitXY"
                     android:text="@string/IBComputer"
@@ -114,6 +120,7 @@
                     android:layout_alignRight="@id/IBComputer"
                     android:layout_marginEnd="-94dp"
                     android:layout_marginRight="-94dp"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBEconomy"
                     android:scaleType="fitCenter"
                     android:text="@string/IBEconomy"
@@ -129,6 +136,7 @@
                     android:layout_marginLeft="24dp"
                     android:layout_marginEnd="-95dp"
                     android:layout_marginRight="-95dp"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBEngineering"
                     android:scaleType="fitCenter"
                     android:text="@string/IBEngineering"
@@ -142,6 +150,7 @@
                     android:layout_alignRight="@id/IBEngineering"
                     android:layout_marginEnd="-94dp"
                     android:layout_marginRight="-94dp"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBEnglish"
                     android:scaleType="fitCenter"
                     android:text="@string/IBEnglish"
@@ -153,6 +162,7 @@
                     android:layout_height="93dp"
                     android:layout_alignBottom="@id/IBComputer"
                     android:layout_marginBottom="-94dp"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBMedicalScience"
                     android:scaleType="fitCenter"
                     android:text="@string/IBMedicalScience"
@@ -168,6 +178,7 @@
                     android:layout_marginTop="1dp"
                     android:layout_toEndOf="@id/IBMedicalScience"
                     android:layout_toRightOf="@id/IBMedicalScience"
+                    android:background="#03FFFFFF"
                     android:contentDescription="@string/IBBiology"
                     android:scaleType="fitCenter"
                     android:text="@string/IBBiology"
@@ -183,6 +194,7 @@
                     android:layout_marginTop="1dp"
                     android:layout_toEndOf="@id/IBBiology"
                     android:layout_toRightOf="@id/IBBiology"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBBusiness"
                     android:scaleType="fitCenter"
                     android:text="@string/IBBusiness"
@@ -198,6 +210,7 @@
                     android:layout_marginTop="1dp"
                     android:layout_marginEnd="-94dp"
                     android:layout_marginRight="-94dp"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBChemistry"
                     android:scaleType="fitCenter"
                     android:text="@string/IBChemistry"
@@ -210,6 +223,7 @@
                     android:layout_alignBottom="@id/IBMedicalScience"
                     android:layout_marginTop="-129dp"
                     android:layout_marginBottom="-95dp"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBFinance"
                     android:scaleType="fitCenter"
                     android:text="@string/IBFinance"
@@ -225,6 +239,7 @@
                     android:layout_marginTop="1dp"
                     android:layout_toEndOf="@id/IBFinance"
                     android:layout_toRightOf="@id/IBFinance"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBPhysics"
                     android:scaleType="fitCenter"
                     android:text="@string/IBPhysics"
@@ -240,6 +255,7 @@
                     android:layout_marginTop="1dp"
                     android:layout_marginEnd="-94dp"
                     android:layout_marginRight="-94dp"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBLaw"
                     android:scaleType="fitCenter"
                     android:text="@string/IBLaw"
@@ -255,6 +271,7 @@
                     android:layout_marginTop="1dp"
                     android:layout_marginEnd="-94dp"
                     android:layout_marginRight="-94dp"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBMath"
                     android:scaleType="fitCenter"
                     android:text="@string/IBMath"
@@ -266,6 +283,7 @@
                     android:layout_height="93dp"
                     android:layout_alignBottom="@id/IBFinance"
                     android:layout_marginBottom="-95dp"
+                    android:background="#00DDDADA"
                     android:contentDescription="@string/IBMusic"
                     android:scaleType="fitCenter"
                     android:text="@string/IBMusic"
@@ -281,6 +299,7 @@
                     android:layout_marginTop="1dp"
                     android:layout_toEndOf="@id/IBMusic"
                     android:layout_toRightOf="@id/IBMusic"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBPerformance"
                     android:scaleType="fitCenter"
                     android:text="@string/IBPerformance"
@@ -296,6 +315,7 @@
                     android:layout_marginTop="1dp"
                     android:layout_toEndOf="@id/IBPerformance"
                     android:layout_toRightOf="@id/IBPerformance"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBArt"
                     android:scaleType="fitCenter"
                     android:text="@string/IBArt"
@@ -311,6 +331,7 @@
                     android:layout_marginTop="1dp"
                     android:layout_toEndOf="@id/IBArt"
                     android:layout_toRightOf="@id/IBArt"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBDrawingAndPainting"
                     android:scaleType="fitCenter"
                     android:text="@string/IBDrawingAndPainting"
@@ -322,6 +343,7 @@
                     android:layout_height="93dp"
                     android:layout_alignBottom="@id/IBMusic"
                     android:layout_marginBottom="-94dp"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBPsychology"
                     android:scaleType="fitCenter"
                     android:text="@string/IBPsychology"
@@ -337,6 +359,7 @@
                     android:layout_marginTop="1dp"
                     android:layout_toEndOf="@id/IBPsychology"
                     android:layout_toRightOf="@id/IBPsychology"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBAgriculture"
                     android:scaleType="fitCenter"
                     android:text="@string/IBAgriculture"
@@ -352,6 +375,7 @@
                     android:layout_marginTop="1dp"
                     android:layout_toEndOf="@id/IBAgriculture"
                     android:layout_toRightOf="@id/IBAgriculture"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBAnimalScience"
                     android:scaleType="fitCenter"
                     android:text="@string/IBAnimalScience"
@@ -367,6 +391,7 @@
                     android:layout_marginTop="1dp"
                     android:layout_toEndOf="@id/IBAnimalScience"
                     android:layout_toRightOf="@id/IBAnimalScience"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBAnimationDesign"
                     android:scaleType="fitCenter"
                     android:text="@string/IBAnimationDesign"
@@ -378,6 +403,7 @@
                     android:layout_height="93dp"
                     android:layout_alignBottom="@id/IBPsychology"
                     android:layout_marginBottom="-95dp"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBArchitecture"
                     android:scaleType="fitCenter"
                     android:text="@string/IBArchitecture"
@@ -393,6 +419,7 @@
                     android:layout_marginTop="1dp"
                     android:layout_toEndOf="@id/IBArchitecture"
                     android:layout_toRightOf="@id/IBArchitecture"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBAstronomy"
                     android:scaleType="fitCenter"
                     android:text="@string/IBAstronomy"
@@ -408,6 +435,7 @@
                     android:layout_marginTop="1dp"
                     android:layout_toEndOf="@id/IBAstronomy"
                     android:layout_toRightOf="@id/IBAstronomy"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBAutomobile"
                     android:scaleType="fitCenter"
                     android:text="@string/IBAutomobile"
@@ -423,6 +451,7 @@
                     android:layout_marginTop="1dp"
                     android:layout_marginEnd="-94dp"
                     android:layout_marginRight="-94dp"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBCultureStudy"
                     android:scaleType="fitCenter"
                     android:text="@string/IBCultureStudy"
@@ -434,6 +463,7 @@
                     android:layout_height="93dp"
                     android:layout_alignBottom="@id/IBArchitecture"
                     android:layout_marginBottom="-94dp"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBDatabase"
                     android:scaleType="fitCenter"
                     android:text="@string/IBDatabase"
@@ -451,6 +481,7 @@
                     android:layout_marginRight="-94dp"
                     android:layout_toEndOf="@id/IBDatabase"
                     android:layout_toRightOf="@id/IBDatabase"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBEducation"
                     android:scaleType="fitCenter"
                     android:text="@string/IBEducation"
@@ -467,6 +498,7 @@
                     android:layout_marginStart="3dp"
                     android:layout_marginLeft="3dp"
                     android:layout_marginTop="1dp"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBEnvironmentalScience"
                     android:scaleType="fitCenter"
                     android:text="@string/IBEnvironmentalScience"
@@ -479,6 +511,7 @@
                     android:layout_alignStart="@id/IBEnglish"
                     android:layout_alignLeft="@id/IBEnglish"
                     android:layout_alignBottom="@id/IBEnvironmentalScience"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBFilm"
                     android:scaleType="fitCenter"
                     android:text="@string/IBFilm"
@@ -490,6 +523,7 @@
                     android:layout_height="93dp"
                     android:layout_alignBottom="@id/IBDatabase"
                     android:layout_marginBottom="-94dp"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBFood"
                     android:scaleType="fitCenter"
                     android:text="@string/IBFood"
@@ -502,6 +536,7 @@
                     android:layout_alignStart="@id/IBEconomy"
                     android:layout_alignLeft="@id/IBEconomy"
                     android:layout_alignTop="@id/IBFood"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBHealth"
                     android:scaleType="fitCenter"
                     android:text="@string/IBHealth"
@@ -514,6 +549,7 @@
                     android:layout_alignStart="@id/IBEngineering"
                     android:layout_alignLeft="@id/IBEngineering"
                     android:layout_alignTop="@id/IBFood"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBHistory"
                     android:scaleType="fitCenter"
                     android:text="@string/IBHistory"
@@ -526,6 +562,7 @@
                     android:layout_alignStart="@id/IBEnglish"
                     android:layout_alignLeft="@id/IBEnglish"
                     android:layout_alignTop="@id/IBFood"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBHorticulture"
                     android:scaleType="fitCenter"
                     android:text="@string/IBHorticulture"
@@ -537,6 +574,7 @@
                     android:layout_height="93dp"
                     android:layout_alignBottom="@id/IBFood"
                     android:layout_marginBottom="-95dp"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBInvestment"
                     android:scaleType="fitCenter"
                     android:text="@string/IBInvestment"
@@ -549,6 +587,7 @@
                     android:layout_alignStart="@id/IBEconomy"
                     android:layout_alignLeft="@id/IBEconomy"
                     android:layout_alignTop="@id/IBInvestment"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBLanguage"
                     android:scaleType="fitCenter"
                     android:text="@string/IBLanguage"
@@ -561,6 +600,7 @@
                     android:layout_alignStart="@id/IBEngineering"
                     android:layout_alignLeft="@id/IBEngineering"
                     android:layout_alignTop="@id/IBInvestment"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBLiterature"
                     android:scaleType="fitCenter"
                     android:text="@string/IBLiterature"
@@ -573,6 +613,7 @@
                     android:layout_alignStart="@id/IBEnglish"
                     android:layout_alignLeft="@id/IBEnglish"
                     android:layout_alignTop="@id/IBInvestment"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBManagement"
                     android:scaleType="fitCenter"
                     android:text="@string/IBManagement"
@@ -584,6 +625,7 @@
                     android:layout_height="93dp"
                     android:layout_alignBottom="@id/IBInvestment"
                     android:layout_marginBottom="-95dp"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBNewsAndMedia"
                     android:scaleType="fitCenter"
                     android:text="@string/IBNewsAndMedia"
@@ -596,6 +638,7 @@
                     android:layout_alignStart="@id/IBEconomy"
                     android:layout_alignLeft="@id/IBEconomy"
                     android:layout_alignTop="@id/IBNewsAndMedia"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBPhilosophy"
                     android:scaleType="fitCenter"
                     android:text="@string/IBPhilosophy"
@@ -608,6 +651,7 @@
                     android:layout_alignStart="@id/IBEngineering"
                     android:layout_alignLeft="@id/IBEngineering"
                     android:layout_alignTop="@id/IBNewsAndMedia"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBPhotography"
                     android:scaleType="fitCenter"
                     android:text="@string/IBPhotography"
@@ -620,6 +664,7 @@
                     android:layout_alignStart="@id/IBEnglish"
                     android:layout_alignLeft="@id/IBEnglish"
                     android:layout_alignTop="@id/IBNewsAndMedia"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBPolitics"
                     android:scaleType="fitCenter"
                     android:text="@string/IBPolitics"
@@ -631,6 +676,7 @@
                     android:layout_height="93dp"
                     android:layout_alignBottom="@id/IBNewsAndMedia"
                     android:layout_marginBottom="-95dp"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBSocialScience"
                     android:scaleType="fitCenter"
                     android:text="@string/IBSocialScience"
@@ -643,6 +689,7 @@
                     android:layout_alignStart="@id/IBEconomy"
                     android:layout_alignLeft="@id/IBEconomy"
                     android:layout_alignTop="@id/IBSocialScience"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBSpeaking"
                     android:scaleType="fitCenter"
                     android:text="@string/IBSpeaking"
@@ -655,6 +702,7 @@
                     android:layout_alignStart="@id/IBEngineering"
                     android:layout_alignLeft="@id/IBEngineering"
                     android:layout_alignTop="@id/IBSocialScience"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBStatistics"
                     android:scaleType="fitCenter"
                     android:text="@string/IBStatistics"
@@ -667,6 +715,7 @@
                     android:layout_alignStart="@id/IBEnglish"
                     android:layout_alignLeft="@id/IBEnglish"
                     android:layout_alignTop="@id/IBSocialScience"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBTheater"
                     android:scaleType="fitCenter"
                     android:text="@string/IBTheater"
@@ -678,6 +727,7 @@
                     android:layout_height="93dp"
                     android:layout_alignBottom="@id/IBSocialScience"
                     android:layout_marginBottom="-96dp"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBTrading"
                     android:scaleType="fitCenter"
                     android:text="@string/IBTrading"
@@ -690,6 +740,7 @@
                     android:layout_alignStart="@id/IBEconomy"
                     android:layout_alignLeft="@id/IBEconomy"
                     android:layout_alignTop="@id/IBTrading"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBUrbanPlanning"
                     android:scaleType="fitCenter"
                     android:text="@string/IBUrbanPlanning"
@@ -702,6 +753,7 @@
                     android:layout_alignStart="@id/IBEngineering"
                     android:layout_alignLeft="@id/IBEngineering"
                     android:layout_alignTop="@id/IBTrading"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBWebPageDesign"
                     android:scaleType="fitCenter"
                     android:text="@string/IBWebPageDesign"
@@ -714,6 +766,7 @@
                     android:layout_alignStart="@id/IBEnglish"
                     android:layout_alignLeft="@id/IBEnglish"
                     android:layout_alignTop="@id/IBTrading"
+                    android:background="#00FFFFFF"
                     android:contentDescription="@string/IBWebPageDesign"
                     android:scaleType="fitCenter"
                     android:text="@string/IBWriting"
@@ -723,5 +776,118 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <TextView
+        android:id="@+id/TSubjectColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/TSubjectColor"
+        android:textColor="#FFFFFF" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageButton
+            android:id="@+id/IBRed"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/IBRed"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/redb" />
+
+        <ImageButton
+            android:id="@+id/IBBlue"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/IBRed"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/IBBlue"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/blueb" />
+
+        <ImageButton
+            android:id="@+id/IBYellow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/IBBlue"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/IBYellow"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/goldbuttom" />
+
+        <ImageButton
+            android:id="@+id/IBGreen"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/IBYellow"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/IBGreen"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/greenb" />
+
+        <ImageButton
+            android:id="@+id/IBPink"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/IBGreen"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/IBPink"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/pinkb" />
+
+        <ImageButton
+            android:id="@+id/IBPurple"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/IBPink"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/IBPurple"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/purpleb" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ICreateSubject"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/ICreateSubject"
+            app:srcCompat="@drawable/confirm" />
+
+        <Button
+            android:id="@+id/BCreateSubject"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/BCreateSubject"
+            android:text="@string/BCreateSubject" />
+    </RelativeLayout>
 
 </LinearLayout>
