@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp">
+
+            <ImageButton
+                android:id="@+id/IBForeignCountryMoreReturnMain"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/IBForeignCountryMoreReturnMain"
+                android:scaleType="center"
+                app:srcCompat="@drawable/abc_vector_test" />
+
+            <TextView
+                android:id="@+id/TForeignCountryMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/TForeignCountryMore"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/ISingapore"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/ISingapore"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/singapore" />
+
+                    <Button
+                        android:id="@+id/BSingapore"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/ISingapore"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BSingapore"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BSingapore"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IGermany"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/IGermany"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/germany" />
+
+                    <Button
+                        android:id="@+id/BGermany"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/IGermany"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BGermany"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BGermany"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IFrance"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/IFrance"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/france" />
+
+                    <Button
+                        android:id="@+id/BFrance"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/IFrance"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BFrance"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BFrance"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IKorea"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/IKorea"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/korea" />
+
+                    <Button
+                        android:id="@+id/BKorea"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/IKorea"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BKorea"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BKorea"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IItaly"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/IItaly"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/italy" />
+
+                    <Button
+                        android:id="@+id/BItaly"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/IItaly"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BItaly"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BItaly"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IArabia"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/IArabia"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/arabia" />
+
+                    <Button
+                        android:id="@+id/BArabia"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/IArabia"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BArabia"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BArabia"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IMalaysia"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/IMalaysia"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/malaysia" />
+
+                    <Button
+                        android:id="@+id/BMalaysia"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/IMalaysia"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BMalaysia"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BMalaysia"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IIndia"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/IIndia"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/india" />
+
+                    <Button
+                        android:id="@+id/BIndia"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/IIndia"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BIndia"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BIndia"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IRussia"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:contentDescription="@string/IRussia"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/russia" />
+
+                    <Button
+                        android:id="@+id/BRussia"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="33dp"
+                        android:layout_toRightOf="@id/IRussia"
+                        android:background="#800408FF"
+                        android:contentDescription="@string/BRussia"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/BRussia"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

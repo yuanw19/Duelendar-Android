@@ -305,7 +305,7 @@
     <!-- foreigncountry_main-->
     <string name="IBForeignCountryMainReturnMain">return</string>
     <string name="TForeignCountryMain">选择学校所在的时区</string>
-    <string name="PTSearchTimeZone">搜索时区</string>
+    <string name="BMoreTimeZone">更多时区</string>
 
     <string name="BChina">中国时间</string>
     <string name="BUSAWest">美国西部时间/洛杉矶</string>
@@ -325,16 +325,6 @@
     <string name="BAusAEST">澳大利亚中东部时间/悉尼</string>
     <string name="BAusLHST">澳大利亚东部时间/豪勋爵岛</string>
     <string name="BJapan">日本时间/东京</string>
-    <string name="BSingapore">新加坡时间</string>
-    <string name="BGermany">德国时间</string>
-    <string name="BFrance">法国时间</string>
-    <string name="BKorea">韩国时间</string>
-    <string name="BItaly">意大利时间</string>
-    <string name="BArabia">阿拉伯时间</string>
-    <string name="BMalaysia">马来西亚时间</string>
-    <string name="BIndia">印度时间</string>
-    <string name="BMexico">墨西哥时间</string>
-    <string name="BRussia">俄罗斯时间</string>
 
     <string name="IChina">中国国旗</string>
     <string name="IAmerica1">美国国旗</string>
@@ -353,16 +343,30 @@
     <string name="IAustralia3">澳大利亚国旗</string>
     <string name="IAustralia4">澳大利亚国旗</string>
     <string name="IAustralia5">澳大利亚国旗</string>
+    <string name="IJapan">日本国旗</string>
+
+    <!-- foreigncountry_more-->
+    <string name="IBForeignCountryMoreReturnMain">return</string>
+    <string name="TForeignCountryMore">选择学校所在的时区</string>
+
+    <string name="BSingapore">新加坡时间</string>
+    <string name="BGermany">德国时间/柏林</string>
+    <string name="BFrance">法国时间/巴黎</string>
+    <string name="BKorea">韩国时间/首尔</string>
+    <string name="BItaly">意大利时间/罗马</string>
+    <string name="BArabia">阿拉伯时间/利雅德</string>
+    <string name="BMalaysia">马来西亚时间/吉隆坡</string>
+    <string name="BIndia">印度时间/新德里</string>
+    <string name="BRussia">俄罗斯时间/莫斯科</string>
+
     <string name="ISingapore">新加坡国旗</string>
     <string name="IGermany">德国国旗</string>
     <string name="IFrance">法国国旗</string>
-    <string name="IJapan">日本国旗</string>
     <string name="IKorea">韩国国旗</string>
     <string name="IItaly">意大利国旗</string>
     <string name="IArabia">阿拉伯国旗</string>
     <string name="IMalaysia">马来西亚国旗</string>
     <string name="IIndia">印度国旗</string>
-    <string name="IMexico">墨西哥国旗</string>
     <string name="IRussia">俄罗斯国旗</string>
 
 

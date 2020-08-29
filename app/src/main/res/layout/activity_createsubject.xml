@@ -414,7 +414,7 @@
                     app:srcCompat="@drawable/automobile_driving_and_engineering" />
 
                 <ImageButton
-                    android:id="@+id/IMCultureStudy"
+                    android:id="@+id/IBCultureStudy"
                     android:layout_width="93dp"
                     android:layout_height="93dp"
                     android:layout_below="@id/IBAnimationDesign"
@@ -602,7 +602,7 @@
                     app:srcCompat="@drawable/philosophy" />
 
                 <ImageButton
-                    android:id="@+id/IDPhotography"
+                    android:id="@+id/IBPhotography"
                     android:layout_width="93dp"
                     android:layout_height="93dp"
                     android:layout_alignStart="@id/IBEngineering"
