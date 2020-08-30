@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#000000"
     android:orientation="vertical"
-    tools:context=".View.UnfinishHwInterface">
+    tools:context=".Controller.Event">
 
     <RelativeLayout
         android:layout_width="match_parent"

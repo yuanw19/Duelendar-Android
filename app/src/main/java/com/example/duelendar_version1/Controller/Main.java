@@ -3,6 +3,7 @@ package com.example.duelendar_version1.Controller;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -14,12 +15,14 @@ import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.duelendar_version1.Model.EventDatabase;
 import com.example.duelendar_version1.Model.SubjectDatabase;
 import com.example.duelendar_version1.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main extends AppCompatActivity {
@@ -29,7 +32,8 @@ public class Main extends AppCompatActivity {
     private int DBid;
     private int ButtonId;
     private int LayoutId;
-    private int ImageButtonId;
+    private int SettingId;
+    ArrayList<String> ColorList = new ArrayList<String>();
     private boolean mIsShowing1 = false;
     private boolean mIsShowing2 = false;
     private PopupWindow popupWindow1;
@@ -46,6 +50,12 @@ public class Main extends AppCompatActivity {
         setContentView(R.layout.main);
         params1 = getWindow().getAttributes();//popup window code
         params2 = getWindow().getAttributes();//popup window code
+        //add colors into array list
+        ColorList.add("#80FF0000");
+        ColorList.add("#80002AFF");
+        ColorList.add("#80FFEB3B");
+        ColorList.add("#8000D12D");
+        //
         //create subject
         CreateSubject = (ImageButton)findViewById(R.id.BAddSubject);
         CreateSubject.setOnClickListener(new View.OnClickListener() {
@@ -69,17 +79,22 @@ public class Main extends AppCompatActivity {
         startActivityForResult(intent, CHECK_SUBJECT_REQUEST_CODE);
     }
 
+    public void openEvent(){
+        Intent intent = new Intent(this,Event.class);
+        startActivity(intent);
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult(requestCode, resultCode, data);
         LinearLayout ll = (LinearLayout) findViewById(R.id.SubjectLayout);
         RelativeLayout rl = new RelativeLayout(this);
         //rlpButton
-        RelativeLayout.LayoutParams rlpButton = new RelativeLayout.LayoutParams(500, 160);
+        RelativeLayout.LayoutParams rlpButton = new RelativeLayout.LayoutParams(760, 160);
         Button EventButton = new Button(this);
         EventButton.setAllCaps(false);
-        EventButton.setBackgroundColor(Color.parseColor("#FFD700"));
         //rlpSetting
-        RelativeLayout.LayoutParams rlpSetting = new RelativeLayout.LayoutParams(160, 160);
+        RelativeLayout.LayoutParams rlpSetting = new RelativeLayout.LayoutParams(80, 80);
         ImageButton ButtonSetting = new ImageButton(this);
         ButtonSetting.setBackgroundResource(R.drawable.wdot);
         if (resultCode == 6) {
@@ -87,16 +102,23 @@ public class Main extends AppCompatActivity {
                 int id = data.getIntExtra("SubjectId", -1);
                 DBid = id;
                 ButtonId = DBid + 1;
-                ImageButtonId = DBid + 100000;
+                SettingId = DBid + 100000;
                 LayoutId = DBid + 200000;
                 EventButton.setId(ButtonId);
-                EventButton.setTextColor(Color.RED);
+                EventButton.setBackgroundColor(Color.parseColor(ColorList.get(id%4)));
+                EventButton.setTextColor(Color.WHITE);
+                EventButton.setTextSize(20);
                 EventButton.setText(SubjectDb.searchSubjectName(DBid));
-                rlpSetting.addRule(RelativeLayout.ALIGN_PARENT_RIGHT, EventButton.getId());
                 rl.setId(LayoutId);
-                ButtonSetting.setId(ImageButtonId);
-                rl.addView(EventButton,rlpButton);
-                rl.addView(ButtonSetting,rlpSetting);
+                ButtonSetting.setId(SettingId);
+                rlpButton.addRule(RelativeLayout.CENTER_HORIZONTAL);
+                rlpButton.setMargins(0, 70, 0, 70);
+                rlpSetting.addRule(RelativeLayout.ALIGN_RIGHT, EventButton.getId());
+                rlpSetting.setMargins(0, 70, 40, 70);
+                rlpSetting.addRule(RelativeLayout.CENTER_VERTICAL);
+                ButtonSetting.setElevation(10);
+                rl.addView(EventButton, rlpButton);
+                rl.addView(ButtonSetting, rlpSetting);
                 ll.addView(rl);
 
                 EventButton.setOnClickListener(new View.OnClickListener() {
@@ -105,9 +127,9 @@ public class Main extends AppCompatActivity {
                         if (! mIsShowing1 && ! mIsShowing2) {
                             ButtonId = v.getId();
                             DBid = ButtonId - 1;
-                            ImageButtonId = DBid + 100000;
+                            SettingId = DBid + 100000;
                             LayoutId = DBid + 200000;
-                            openSubject();
+                            openEvent();
                         }
                     }
                 });
@@ -115,8 +137,8 @@ public class Main extends AppCompatActivity {
                     @Override
                     public void onClick(View v){
                         if (! mIsShowing1 && ! mIsShowing2) {
-                            ImageButtonId = v.getId();
-                            DBid = ImageButtonId - 100000;
+                            SettingId = v.getId();
+                            DBid = SettingId - 100000;
                             ButtonId = DBid + 1;
                             LayoutId = DBid + 200000;
                             DeleteSubjectPopup(v);
@@ -128,7 +150,7 @@ public class Main extends AppCompatActivity {
                 int id = data.getIntExtra("SubjectId", -1);
                 DBid = id;
                 ButtonId = DBid + 1;
-                ImageButtonId = DBid + 100000;
+                SettingId = DBid + 100000;
                 LayoutId = DBid + 200000;
                 TemporaryButton = (Button) findViewById(ButtonId);
                 TemporaryButton.setText(SubjectDb.searchSubjectName(DBid));

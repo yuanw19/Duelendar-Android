@@ -82,7 +82,7 @@ public class Subject extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_createsubject);
-        ETSubjectName = (EditText) findViewById(R.id.TSubjectName);
+        ETSubjectName = (EditText) findViewById(R.id.ETSubjectName);
 
         //set logo click color
         //IBComputer

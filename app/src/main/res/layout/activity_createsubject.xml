@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="#040C13"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".Controller.Subject">
@@ -17,7 +17,6 @@
             android:id="@+id/TBCreateSubject"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#00FFFFFF"
             android:contentDescription="@string/BCreateSubject"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
@@ -38,13 +37,13 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
             android:layout_marginLeft="15dp"
             android:background="#0064FFDA"
             android:contentDescription="@string/IBCreateSubjectReturnMain"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/abc_vector_test"
-            tools:ignore="PrivateResource"
-            android:layout_marginStart="15dp" />
+            tools:ignore="PrivateResource" />
 
     </RelativeLayout>
 
@@ -57,7 +56,7 @@
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:layout_centerVertical="true"
-            android:background="#FFFFFF"
+            android:background = "@drawable/leftrounded"
             android:contentDescription="@string/TSubjectName"
             android:gravity="center"
             android:text="@string/TSubjectName"
@@ -65,12 +64,14 @@
 
         <EditText
             android:id="@+id/ETSubjectName"
-            android:layout_width="270dp"
+            android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_toEndOf="@id/TSubjectName"
             android:layout_toRightOf="@id/TSubjectName"
-            android:background="#FFFFFF"
+            android:background="@drawable/rightrounded"
             android:contentDescription="@string/ETSubjectName"
             android:ems="10"
             android:inputType="textPersonName" />
