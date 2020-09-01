@@ -4,14 +4,20 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.media.tv.TvContract;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import androidx.annotation.DrawableRes;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.duelendar_version1.Model.SubjectDatabase;
@@ -22,6 +28,23 @@ import java.io.ByteArrayOutputStream;
 public class Subject extends AppCompatActivity {
     private ImageButton ReturnMain;
     private Button CreateSubject;
+    private int LogoBack;
+    //logo color IB
+    private ImageButton IBRed;
+    private ImageButton IBBlue;
+    private ImageButton IBYellow;
+    private ImageButton IBGreen;
+    private ImageButton IBPink;
+    private ImageButton IBPurple;
+    //
+    //logo correct view
+    private ImageView IVCorrectRed;
+    private ImageView IVCorrectBlue;
+    private ImageView IVCorrectYellow;
+    private ImageView IVCorrectGreen;
+    private ImageView IVCorrectPink;
+    private ImageView IVCorrectPurple;
+    //
     //Subjects IB
     private ImageButton IBComputer;
     private ImageButton IBEconomy;
@@ -79,12 +102,99 @@ public class Subject extends AppCompatActivity {
     private int UserSubjectId;
     private SubjectDatabase SubjectDb = new SubjectDatabase(this);
 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_createsubject);
         ETSubjectName = (EditText) findViewById(R.id.ETSubjectName);
-
+        //set logo correct view
+        IVCorrectRed = (ImageView) findViewById(R.id.IVCorrectRed);
+        IVCorrectBlue = (ImageView) findViewById(R.id.IVCorrectBlue);
+        IVCorrectYellow = (ImageView) findViewById(R.id.IVCorrectYellow);
+        IVCorrectGreen = (ImageView) findViewById(R.id.IVCorrectGreen);
+        IVCorrectPink = (ImageView) findViewById(R.id.IVCorrectPink);
+        IVCorrectPurple = (ImageView) findViewById(R.id.IVCorrectPurple);
+        //
         //set logo click color
+        IBRed = (ImageButton) findViewById(R.id.IBRed);
+        IBRed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                IVCorrectRed.setVisibility(View.VISIBLE);
+                IVCorrectBlue.setVisibility(View.GONE);
+                IVCorrectYellow.setVisibility(View.GONE);
+                IVCorrectGreen.setVisibility(View.GONE);
+                IVCorrectPink.setVisibility(View.GONE);
+                IVCorrectPurple.setVisibility(View.GONE);
+                LogoBack = 1;
+            }
+        });
+        IBBlue = (ImageButton) findViewById(R.id.IBBlue);
+        IBBlue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                IVCorrectRed.setVisibility(View.GONE);
+                IVCorrectBlue.setVisibility(View.VISIBLE);
+                IVCorrectYellow.setVisibility(View.GONE);
+                IVCorrectGreen.setVisibility(View.GONE);
+                IVCorrectPink.setVisibility(View.GONE);
+                IVCorrectPurple.setVisibility(View.GONE);
+                LogoBack = 2;
+            }
+        });
+        IBYellow = (ImageButton) findViewById(R.id.IBYellow);
+        IBYellow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                IVCorrectRed.setVisibility(View.GONE);
+                IVCorrectBlue.setVisibility(View.GONE);
+                IVCorrectYellow.setVisibility(View.VISIBLE);
+                IVCorrectGreen.setVisibility(View.GONE);
+                IVCorrectPink.setVisibility(View.GONE);
+                IVCorrectPurple.setVisibility(View.GONE);
+                LogoBack = 3;
+            }
+        });
+        IBGreen = (ImageButton) findViewById(R.id.IBGreen);
+        IBGreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                IVCorrectRed.setVisibility(View.GONE);
+                IVCorrectBlue.setVisibility(View.GONE);
+                IVCorrectYellow.setVisibility(View.GONE);
+                IVCorrectGreen.setVisibility(View.VISIBLE);
+                IVCorrectPink.setVisibility(View.GONE);
+                IVCorrectPurple.setVisibility(View.GONE);
+                LogoBack = 4;
+            }
+        });
+        IBPink = (ImageButton) findViewById(R.id.IBPink);
+        IBPink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                IVCorrectRed.setVisibility(View.GONE);
+                IVCorrectBlue.setVisibility(View.GONE);
+                IVCorrectYellow.setVisibility(View.GONE);
+                IVCorrectGreen.setVisibility(View.GONE);
+                IVCorrectPink.setVisibility(View.VISIBLE);
+                IVCorrectPurple.setVisibility(View.GONE);
+                LogoBack = 5;
+            }
+        });
+        IBPurple = (ImageButton) findViewById(R.id.IBPurple);
+        IBPurple.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                IVCorrectRed.setVisibility(View.GONE);
+                IVCorrectBlue.setVisibility(View.GONE);
+                IVCorrectYellow.setVisibility(View.GONE);
+                IVCorrectGreen.setVisibility(View.GONE);
+                IVCorrectPink.setVisibility(View.GONE);
+                IVCorrectPurple.setVisibility(View.VISIBLE);
+                LogoBack = 6;
+            }
+        });
+        //
         //IBComputer
         IBComputer = (ImageButton) findViewById(R.id.IBComputer);
         IBComputer.setOnClickListener(new View.OnClickListener() {
@@ -747,6 +857,7 @@ public class Subject extends AppCompatActivity {
         Toast t = Toast.makeText(getApplicationContext(), "添加完成！", Toast.LENGTH_SHORT);
         t.show();
         intent.putExtra("SubjectId", UserSubjectId);
+        intent.putExtra("LogoBackgroundColor", LogoBack);
         setResult(6, intent);
         finish();
     }

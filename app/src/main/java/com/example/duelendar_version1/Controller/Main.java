@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
@@ -33,7 +34,7 @@ public class Main extends AppCompatActivity {
     private int ButtonId;
     private int LayoutId;
     private int SettingId;
-    ArrayList<String> ColorList = new ArrayList<String>();
+    private int LogoBack;
     private boolean mIsShowing1 = false;
     private boolean mIsShowing2 = false;
     private PopupWindow popupWindow1;
@@ -50,12 +51,6 @@ public class Main extends AppCompatActivity {
         setContentView(R.layout.main);
         params1 = getWindow().getAttributes();//popup window code
         params2 = getWindow().getAttributes();//popup window code
-        //add colors into array list
-        ColorList.add("#80FF0000");
-        ColorList.add("#80002AFF");
-        ColorList.add("#80FFEB3B");
-        ColorList.add("#8000D12D");
-        //
         //create subject
         CreateSubject = (ImageButton)findViewById(R.id.BAddSubject);
         CreateSubject.setOnClickListener(new View.OnClickListener() {
@@ -97,30 +92,64 @@ public class Main extends AppCompatActivity {
         RelativeLayout.LayoutParams rlpSetting = new RelativeLayout.LayoutParams(80, 80);
         ImageButton ButtonSetting = new ImageButton(this);
         ButtonSetting.setBackgroundResource(R.drawable.wdot);
+        //rlpBackground
+        RelativeLayout.LayoutParams rlpBackground = new RelativeLayout.LayoutParams(160, 160);
+        ImageView Logo = new ImageView(this);
         if (resultCode == 6) {
             if (requestCode == CREATE_SUBJECT_REQUEST_CODE) {
+                //set id
                 int id = data.getIntExtra("SubjectId", -1);
                 DBid = id;
                 ButtonId = DBid + 1;
                 SettingId = DBid + 100000;
                 LayoutId = DBid + 200000;
                 EventButton.setId(ButtonId);
-                EventButton.setBackgroundColor(Color.parseColor(ColorList.get(id%4)));
-                EventButton.setTextColor(Color.WHITE);
-                EventButton.setTextSize(20);
-                EventButton.setText(SubjectDb.searchSubjectName(DBid));
                 rl.setId(LayoutId);
                 ButtonSetting.setId(SettingId);
+                //
+                //set logo color
+                LogoBack = data.getIntExtra("LogoBackgroundColor", -1);
+                switch (LogoBack) {
+                    case 1: Logo.setBackgroundResource(R.drawable.redb);
+                        break;
+                    case 2: Logo.setBackgroundResource(R.drawable.blueb);
+                        break;
+                    case 3: Logo.setBackgroundResource(R.drawable.goldbuttom);
+                        break;
+                    case 4: Logo.setBackgroundResource(R.drawable.greenb);
+                        break;
+                    case 5: Logo.setBackgroundResource(R.drawable.pinkb);
+                        break;
+                    case 6: Logo.setBackgroundResource(R.drawable.purpleb);
+                        break;
+                    default: Logo.setBackgroundResource(R.drawable.wbuttom);
+                }
+                //
+                //set event button attribute
+                EventButton.setTextColor(Color.WHITE);
+                EventButton.setTextSize(25);
+                EventButton.setGravity(Gravity.LEFT);
+                EventButton.setPadding(10,0,0,0);
+                EventButton.setText(SubjectDb.searchSubjectName(DBid));
+                EventButton.setGravity(Gravity.LEFT);
+                EventButton.setBackgroundColor(Color.TRANSPARENT);
                 rlpButton.addRule(RelativeLayout.CENTER_HORIZONTAL);
                 rlpButton.setMargins(0, 70, 0, 70);
                 rlpSetting.addRule(RelativeLayout.ALIGN_RIGHT, EventButton.getId());
                 rlpSetting.setMargins(0, 70, 40, 70);
                 rlpSetting.addRule(RelativeLayout.CENTER_VERTICAL);
+                rlpBackground.setMargins(5,70,0,0);
+                rlpBackground.addRule(RelativeLayout.ALIGN_PARENT_LEFT, EventButton.getId());
+                rlpBackground.addRule(RelativeLayout.CENTER_VERTICAL);
                 ButtonSetting.setElevation(10);
+                Logo.setElevation(10);
+                //
+                //add view
+                rl.addView(Logo,rlpBackground);
                 rl.addView(EventButton, rlpButton);
                 rl.addView(ButtonSetting, rlpSetting);
                 ll.addView(rl);
-
+                //
                 EventButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v){
@@ -160,7 +189,6 @@ public class Main extends AppCompatActivity {
 
     public void DeleteSubjectPopup(View view) {
         if (popupWindow1 == null) {
-            LayoutId = view.getId();
             DeleteSubjectInitPopup();
         }
         if (!mIsShowing1) {

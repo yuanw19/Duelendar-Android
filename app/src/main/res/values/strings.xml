@@ -60,6 +60,12 @@
     <string name="IBGreen">绿</string>
     <string name="IBPink">粉</string>
     <string name="IBPurple">紫</string>
+    <string name="IVCorrectRed">红</string>
+    <string name="IVCorrectBlue">蓝</string>
+    <string name="IVCorrectYellow">黄</string>
+    <string name="IVCorrectGreen">绿</string>
+    <string name="IVCorrectPink">粉</string>
+    <string name="IVCorrectPurple">紫</string>
 
     <string name="IBComputer">IBComputer</string>
     <string name="IBEconomy">IBEconomy</string>
