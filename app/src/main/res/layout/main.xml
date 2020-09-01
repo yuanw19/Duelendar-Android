@@ -8,208 +8,509 @@
     android:contentDescription="@string/IBOption1"
     tools:context=".Controller.Main">
 
-    <LinearLayout
-        android:id="@+id/Main"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#00FFFFFF"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <RelativeLayout
+        <ImageView
+            android:id="@+id/BMainBackgroud"
             android:layout_width="match_parent"
-            android:layout_height="66dp"
-            android:layout_marginBottom="10dp">
+            android:layout_height="match_parent"
+            android:contentDescription="@string/BMainBackgroud"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/mainbg" />
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/TBMain"
+        <LinearLayout
+            android:id="@+id/Main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:orientation="vertical">
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#00FFFFFF"
-                android:contentDescription="@string/TBMain"
-                android:minHeight="?attr/actionBarSize"
-                android:theme="?attr/actionBarTheme" />
+                android:layout_height="66dp">
 
-            <TextView
-                android:id="@+id/TTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="@string/TTitle"
-                android:textColor="#FFFFFF"
-                android:textSize="28sp" />
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/TBMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="@string/TBMain"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="?attr/actionBarTheme" />
 
-            <ImageButton
-                android:id="@+id/IBSetting"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="15dp"
-                android:background="#00FFFFFF"
-                android:contentDescription="@string/IBSetting"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/whsetting" />
+                <TextView
+                    android:id="@+id/TTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/carter_one"
+                    android:text="@string/TTitle"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp" />
 
-            <ImageButton
-                android:id="@+id/BAddSubject"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_alignRight="@id/TBMain"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="15dp"
-                android:background="#00FFFFFF"
-                android:contentDescription="@string/BAddSubject"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/plus" />
-        </RelativeLayout>
+                <ImageButton
+                    android:id="@+id/BAddSubject"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignRight="@id/TBMain"
+                    android:layout_alignEnd="@id/TBMain"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="@string/BAddSubject"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/plus" />
+            </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp">
-
-            <ImageButton
-                android:id="@+id/IBSchoolImage"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_centerInParent="true"
-                android:background="#00FFFFFF"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/schooldefault" />
-        </RelativeLayout>
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <LinearLayout
-                android:id="@+id/SubjectLayout"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp">
 
-                <RelativeLayout
+                <TextView
+                    android:id="@+id/TUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/TUsername"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/TUserIDA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/TUsername"
+                    android:layout_alignStart="@id/TUsername"
+                    android:layout_alignLeft="@id/TUsername"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/TUserIDA"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/TUserIDB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/TUsername"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/TUserIDA"
+                    android:layout_toRightOf="@id/TUserIDA"
+                    android:gravity="center"
+                    android:text="@string/TUserIDB"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <ImageButton
+                    android:id="@+id/IBSetting"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="353dp"
+                    android:layout_marginStart="353dp"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="@string/IBSetting"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <ImageView
+                    android:id="@+id/IBSchoolBackground"
                     android:layout_width="match_parent"
-                    android:layout_height="130dp">
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/IBSchoolBackground"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/confirm" />
 
-                    <Button
-                        android:id="@+id/BDefaultSubject1"
-                        android:layout_width="290dp"
-                        android:layout_height="match_parent"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginBottom="30dp"
-                        android:background="#80FF0000"
-                        android:contentDescription="@string/BDefaultSubject1"
-                        android:text="@string/BDefaultSubject1"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
-
-                    <ImageButton
-                        android:id="@+id/IBOption1"
-                        android:layout_width="40dp"
-                        android:layout_height="30dp"
-                        android:layout_alignRight="@id/BDefaultSubject1"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="8dp"
-                        android:background="#00FFFFFF"
-                        android:contentDescription="@string/IBOption1"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/wdot" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="130dp">
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/BDefaultSubject2"
-                        android:layout_width="290dp"
+                    <RelativeLayout
+                        android:layout_width="195dp"
                         android:layout_height="match_parent"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginBottom="30dp"
-                        android:background="#80002AFF"
-                        android:contentDescription="@string/BDefaultSubject2"
-                        android:text="@string/BDefaultSubject2"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                        android:layout_marginStart="30dpdp"
+                        android:layout_marginLeft="30dp">
 
-                    <ImageButton
-                        android:id="@+id/IBOption2"
-                        android:layout_width="40dp"
-                        android:layout_height="30dp"
-                        android:layout_alignRight="@id/BDefaultSubject2"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="8dp"
-                        android:background="#00FFFFFF"
-                        android:contentDescription="@string/IBOption2"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/wdot" />
+                        <ImageView
+                            android:id="@+id/IBSchoolImage"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="false"
+                            android:layout_marginTop="45dp"
+                            android:contentDescription="@string/IBSchoolImage"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/schooldefault" />
 
-                </RelativeLayout>
+                        <TextView
+                            android:id="@+id/TSchoolNameENG"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="45dp"
+                            android:layout_toEndOf="@id/IBSchoolImage"
+                            android:layout_toRightOf="@id/IBSchoolImage"
+                            android:text="@string/TSchoolNameENG"
+                            android:textColor="#000000"
+                            android:textSize="13sp" />
 
-                <RelativeLayout
+                        <TextView
+                            android:id="@+id/TSchoolNameCHN"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="65dp"
+                            android:layout_toEndOf="@id/IBSchoolImage"
+                            android:layout_toRightOf="@id/IBSchoolImage"
+                            android:text="@string/TSchoolNameCHN"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/ISplitA"
+                        android:layout_width="2dp"
+                        android:layout_height="117dp"
+                        android:layout_marginTop="7dp"
+                        android:baselineAlignBottom="false"
+                        android:contentDescription="@string/ISplitA"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/verticalline" />
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/TGradeA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="41dp"
+                            android:text="@string/TGradeA"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/TGradeB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="65dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginRight="20dp"
+                            android:text="@string/TGradeB"
+                            android:textColor="#838383"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/ISplitB"
+                        android:layout_width="2dp"
+                        android:layout_height="117dp"
+                        android:layout_marginTop="7dp"
+                        android:baselineAlignBottom="false"
+                        android:contentDescription="@string/ISplitB"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/verticalline" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/TCoursesA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="44dp"
+                            android:layout_marginLeft="44dp"
+                            android:layout_marginTop="41dp"
+                            android:text="@string/TCoursesA"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/TCoursesB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="65dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginRight="20dp"
+                            android:text="@string/TCoursesB"
+                            android:textColor="#838383"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="33dp">
+
+                <TextView
+                    android:id="@+id/TCoursesList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/TCoursesList"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/SubjectLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="130dp">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                    <Button
-                        android:id="@+id/BDefaultSubject3"
-                        android:layout_width="290dp"
-                        android:layout_height="match_parent"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginBottom="30dp"
-                        android:background="#80FFEB3B"
-                        android:contentDescription="@string/BDefaultSubject3"
-                        android:text="@string/BDefaultSubject3"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp" >
 
-                    <ImageButton
-                        android:id="@+id/IBOption3"
-                        android:layout_width="40dp"
-                        android:layout_height="30dp"
-                        android:layout_alignRight="@id/BDefaultSubject3"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="8dp"
-                        android:background="#00FFFFFF"
-                        android:contentDescription="@string/IBOption3"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/wdot" />
+                        <ImageView
+                            android:id="@+id/IDefaultSubject1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:contentDescription="@string/IDefaultSubject1"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/whitewrite" />
 
-                </RelativeLayout>
+                        <TextView
+                            android:id="@+id/TDefaultSubject1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_toEndOf="@id/IDefaultSubject1"
+                            android:layout_toRightOf="@id/IDefaultSubject1"
+                            android:contentDescription="@string/TDefaultSubject1"
+                            android:text="@string/TDefaultSubject1"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp">
+                        <TextView
+                            android:id="@+id/TDefaultSubject1Form"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:layout_toEndOf="@id/IDefaultSubject1"
+                            android:layout_toRightOf="@id/TDefaultSubject1"
+                            android:contentDescription="@string/TDefaultSubject1Form"
+                            android:text="@string/TDefaultSubject1Form"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp" />
 
-                    <Button
-                        android:id="@+id/BDefaultSubject4"
-                        android:layout_width="290dp"
-                        android:layout_height="match_parent"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginBottom="30dp"
-                        android:background="#8000D12D"
-                        android:contentDescription="@string/BDefaultSubject4"
-                        android:text="@string/BDefaultSubject4"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                        <ImageButton
+                            android:id="@+id/IBOption1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="350dp"
+                            android:layout_marginStart="350dp"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="@string/IBOption1"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/arrow" />
 
-                    <ImageButton
-                        android:id="@+id/IBOption4"
-                        android:layout_width="40dp"
-                        android:layout_height="30dp"
-                        android:layout_alignRight="@id/BDefaultSubject4"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="8dp"
-                        android:background="#00FFFFFF"
-                        android:contentDescription="@string/IBOption4"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/wdot" />
-                </RelativeLayout>
-            </LinearLayout>
-        </ScrollView>
+                    </RelativeLayout>
 
-    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp">
+
+                        <ImageView
+                            android:id="@+id/IDefaultSubject2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:contentDescription="@string/IDefaultSubject2"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/whitewrite" />
+
+                        <TextView
+                            android:id="@+id/TDefaultSubject2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_toEndOf="@id/IDefaultSubject2"
+                            android:layout_toRightOf="@id/IDefaultSubject2"
+                            android:contentDescription="@string/TDefaultSubject2"
+                            android:text="@string/TDefaultSubject2"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/TDefaultSubject2Form"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:layout_toEndOf="@id/IDefaultSubject2"
+                            android:layout_toRightOf="@id/TDefaultSubject2"
+                            android:contentDescription="@string/TDefaultSubject2Form"
+                            android:text="@string/TDefaultSubject2Form"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp" />
+
+                        <ImageButton
+                            android:id="@+id/IBOption2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="350dp"
+                            android:layout_marginLeft="350dp"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="@string/IBOption2"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/arrow" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp">
+
+                        <ImageView
+                            android:id="@+id/IDefaultSubject3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:contentDescription="@string/IDefaultSubject3"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/whitewrite" />
+
+                        <TextView
+                            android:id="@+id/TDefaultSubject3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_toEndOf="@id/IDefaultSubject3"
+                            android:layout_toRightOf="@id/IDefaultSubject3"
+                            android:contentDescription="@string/TDefaultSubject3"
+                            android:text="@string/TDefaultSubject3"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/TDefaultSubject3Form"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:layout_toEndOf="@id/IDefaultSubject3"
+                            android:layout_toRightOf="@id/TDefaultSubject3"
+                            android:contentDescription="@string/TDefaultSubject3Form"
+                            android:text="@string/TDefaultSubject3Form"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp" />
+
+                        <ImageButton
+                            android:id="@+id/IBOption3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="350dp"
+                            android:layout_marginLeft="350dp"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="@string/IBOption3"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/arrow" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp">
+
+                        <ImageView
+                            android:id="@+id/IDefaultSubject4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:contentDescription="@string/IDefaultSubject4"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/whitewrite" />
+
+                        <TextView
+                            android:id="@+id/TDefaultSubject4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_toEndOf="@id/IDefaultSubject4"
+                            android:layout_toRightOf="@id/IDefaultSubject4"
+                            android:contentDescription="@string/TDefaultSubject4"
+                            android:text="@string/TDefaultSubject4"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/TDefaultSubject4Form"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:layout_toEndOf="@id/IDefaultSubject4"
+                            android:layout_toRightOf="@id/TDefaultSubject4"
+                            android:contentDescription="@string/TDefaultSubject4Form"
+                            android:text="@string/TDefaultSubject4Form"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp" />
+
+                        <ImageButton
+                            android:id="@+id/IBOption4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="350dp"
+                            android:layout_marginLeft="350dp"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="@string/IBOption4"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/arrow" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
 </LinearLayout>

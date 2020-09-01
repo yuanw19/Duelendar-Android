@@ -8,7 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#000000"
+        android:background="#090E35"
         android:orientation="vertical">
 
         <RelativeLayout
@@ -39,69 +39,317 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="145dp">
+            android:layout_height="40dp"
+            android:background="#00FFFFFF">
 
-            <Button
-                android:id="@+id/BSchoolTimeZone"
-                android:layout_width="300dp"
-                android:layout_height="65dp"
-                android:layout_centerInParent="true"
-                android:background="#80ECBD14"
-                android:contentDescription="@string/BSchoolTimeZone"
-                android:text="@string/BSchoolTimeZone"
+            <TextView
+                android:id="@+id/TAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/TAccount"
                 android:textColor="#FFFFFF"
-                android:textSize="20sp" />
-
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="145dp">
+            android:layout_height="wrap_content">
 
-            <Button
-                android:id="@+id/BLocalTimeZone"
-                android:layout_width="300dp"
-                android:layout_height="65dp"
-                android:layout_centerInParent="true"
-                android:background="#80ECBD14"
-                android:contentDescription="@string/BLocalTimeZone"
-                android:text="@string/BLocalTimeZone"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IName"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:contentDescription="@string/IName"
+                        app:srcCompat="@drawable/name" />
+
+                    <TextView
+                        android:id="@+id/TName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/IName"
+                        android:contentDescription="@string/TName"
+                        android:text="@string/TName"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/PTName"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@id/TName"
+                        android:contentDescription="@string/PTName"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/PTName"
+                        android:textColor="#A8A8A8" />
+
+                    <ImageButton
+                        android:id="@+id/IBName"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/PTName"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="@string/IBName"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/arrow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/ISchool"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:contentDescription="@string/ISchool"
+                        app:srcCompat="@drawable/school" />
+
+                    <TextView
+                        android:id="@+id/TSchool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/ISchool"
+                        android:contentDescription="@string/TSchool"
+                        android:text="@string/TSchool"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/PTSchool"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@id/TSchool"
+                        android:contentDescription="@string/PTSchool"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/PTSchool"
+                        android:textColor="#A8A8A8" />
+
+                    <ImageButton
+                        android:id="@+id/IBSchool"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/PTSchool"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="@string/IBSchool"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/arrow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/TTimeZoneSetting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/TTimeZoneSetting"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/ISchoolTimeZone"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:contentDescription="@string/ISchoolTimeZone"
+                        app:srcCompat="@drawable/schooltimezone" />
+
+                    <TextView
+                        android:id="@+id/TSchoolTimeZone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/ISchoolTimeZone"
+                        android:contentDescription="@string/TSchoolTimeZone"
+                        android:text="@string/TSchoolTimeZone"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/PTSchoolTimeZone"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@id/TSchoolTimeZone"
+                        android:contentDescription="@string/PTSchoolTimeZone"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/PTSchoolTimeZone"
+                        android:textColor="#A8A8A8" />
+
+                    <ImageButton
+                        android:id="@+id/IBSchoolTimeZone"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/PTSchoolTimeZone"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="@string/IBSchoolTimeZone"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/arrow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/ILocalTimeZone"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:contentDescription="@string/ILocalTimeZone"
+                        app:srcCompat="@drawable/localtimezone" />
+
+                    <TextView
+                        android:id="@+id/TLocalTimeZone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/ILocalTimeZone"
+                        android:contentDescription="@string/TLocalTimeZone"
+                        android:text="@string/TLocalTimeZone"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/PTLocalTimeZone"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@id/TLocalTimeZone"
+                        android:contentDescription="@string/PTLocalTimeZone"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/PTLocalTimeZone"
+                        android:textColor="#A8A8A8" />
+
+                    <ImageButton
+                        android:id="@+id/IBLocalTimeZone"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/PTLocalTimeZone"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="@string/IBSchoolTimeZone"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/arrow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/TPersonalize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/TPersonalize"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/IBackground"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:contentDescription="@string/IBackground"
+                        app:srcCompat="@drawable/bg" />
+
+                    <TextView
+                        android:id="@+id/TBackground"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/IBackground"
+                        android:contentDescription="@string/TBackground"
+                        android:text="@string/TBackground"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/IBBackground"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="262dp"
+                        android:layout_toRightOf="@id/TBackground"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="@string/IBBackground"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/arrow" />
+
+                </RelativeLayout>
+            </LinearLayout>
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="145dp">
-
-            <Button
-                android:id="@+id/BBackgroundImage"
-                android:layout_width="300dp"
-                android:layout_height="65dp"
-                android:layout_centerInParent="true"
-                android:background="#80ECBD14"
-                android:contentDescription="@string/BBackgroundImage"
-                android:text="@string/BBackgroundImage"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="145dp">
-
-            <Button
-                android:id="@+id/BSchool"
-                android:layout_width="300dp"
-                android:layout_height="65dp"
-                android:layout_centerInParent="true"
-                android:background="#80ECBD14"
-                android:contentDescription="@string/BSchool"
-                android:text="@string/BSchool"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp" />
-        </RelativeLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

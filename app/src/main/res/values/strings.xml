@@ -11,23 +11,45 @@
     <string name="App_title">Dulendar</string>
 
     <!-- main -->
+    <string name="BMainBackgroud">主界面蓝黑背景</string>
+
     <string name="TBMain">主界面工具栏</string>
     <string name="TTitle">Duelendar</string>
-    <string name="IBSetting">setting</string>
     <string name="BAddSubject">添加学科</string>
-    <string name="IBSchoolImage">SchoolImage</string>
-    <string name="BDefaultSubject1">默认学科1</string>
-    <string name="IBOption1">默认学科1三点</string>
-    <string name="BDefaultSubject2">默认学科2</string>
-    <string name="IBOption2">默认学科2三点</string>
-    <string name="BDefaultSubject3">默认学科3</string>
-    <string name="IBOption3">默认学科3三点</string>
-    <string name="BDefaultSubject4">默认学科4</string>
-    <string name="IBOption4">默认学科4三点</string>
-    <string name="IVDefaultSubject">SubjectImage</string>
-    <string name="BOther">其它</string>
-    <string name="IBDeleteSubject">IBDeleteSubject</string>
 
+    <string name="TUsername">未填写用户名</string>
+    <string name="TUserIDA">账号：</string>
+    <string name="TUserIDB">-----</string>
+    <string name="IBSetting">setting</string>
+
+    <string name="IBSchoolBackground">学校信息背景</string>
+    <string name="IBSchoolImage">SchoolImage</string>
+    <string name="TSchoolNameCHN">选择我的学校</string>
+    <string name="TSchoolNameENG">Select My School</string>
+    <string name="ISplitA">学校、年级分界线</string>
+    <string name="TGradeA">-</string>
+    <string name="TGradeB">年级</string>
+    <string name="ISplitB">年级、已选课程分界线</string>
+    <string name="TCoursesA">-</string>
+    <string name="TCoursesB">已选课程</string>
+
+    <string name="TCoursesList">课程列表</string>
+    <string name="IDefaultSubject1">Course1图标</string>
+    <string name="TDefaultSubject1">Course1</string>
+    <string name="TDefaultSubject1Form">Online</string>
+    <string name="IBOption1">默认学科1设置</string>
+    <string name="IDefaultSubject2">Course2图标</string>
+    <string name="TDefaultSubject2">Course2</string>
+    <string name="TDefaultSubject2Form">Online</string>
+    <string name="IBOption2">默认学科2设置</string>
+    <string name="IDefaultSubject3">Course3图标</string>
+    <string name="TDefaultSubject3">Course3</string>
+    <string name="TDefaultSubject3Form">Online</string>
+    <string name="IBOption3">默认学科3设置</string>
+    <string name="IDefaultSubject4">Course4图标</string>
+    <string name="TDefaultSubject4">Course4</string>
+    <string name="TDefaultSubject4Form">Online</string>
+    <string name="IBOption4">默认学科4设置</string>
 
     <!-- delete_subject_pop -->
     <string name="BClearSubject">删除此学科(包括作业内容)</string>
@@ -42,10 +64,32 @@
     <!-- setting -->
     <string name="IBSettingReturnMain">return</string>
     <string name="TSetting">设置</string>
-    <string name="BSchoolTimeZone">更改学校所在的时区</string>
-    <string name="BLocalTimeZone">更改我所在的时区</string>
-    <string name="BBackgroundImage">设置背景图</string>
-    <string name="BSchool">选择我的学校</string>
+
+    <string name="TAccount">账号</string>
+    <string name="IName">昵称标志</string>
+    <string name="TName">昵称</string>
+    <string name="PTName">未填写</string>
+    <string name="IBName">昵称修改按钮</string>
+    <string name="ISchool">学校标志</string>
+    <string name="TSchool">学校</string>
+    <string name="PTSchool">未选择</string>
+    <string name="IBSchool">学校修改按钮</string>
+
+    <string name="TTimeZoneSetting">时区设置</string>
+    <string name="ISchoolTimeZone">学校所在时区标志</string>
+    <string name="TSchoolTimeZone">学校所在时区</string>
+    <string name="PTSchoolTimeZone">未选择</string>
+    <string name="IBSchoolTimeZone">学校所在时区修改按钮</string>
+    <string name="ILocalTimeZone">本人所在时区标志</string>
+    <string name="TLocalTimeZone">本人所在时区</string>
+    <string name="PTLocalTimeZone">未选择</string>
+    <string name="IBLocalTimeZone">本人所在时区修改按钮</string>
+
+    <string name="TPersonalize">个性化设置</string>
+    <string name="IBackground">背景标志</string>
+    <string name="TBackground">背景</string>
+    <string name="IBBackground">背景修改按钮</string>
+
 
     <!-- activity_createsubject -->
     <string name="TCreateSubjectDuelendar">添加学科</string>
@@ -148,14 +192,26 @@
     <!-- activity_createevent -->
     <string name="TBCreateEventReturnMain">选项栏</string>
     <string name="IBCreateEventReturnMain">return</string>
-    <string name="TCreateEvent">添加事件</string>
-    <string name="BCreateEvent">创建</string>
-    <string name="ICreateEvent">图标</string>
-    <string name="PTEventName">事件名称</string>
-    <string name="BDuedate">截止日期</string>
-    <string name="BEventTimeZone">事件所在时区（默认大学时区）</string>
-    <string name="BEventNotification">设置提醒</string>
-    <string name="PTEventMemo">备注</string>
+    <string name="TCreateEvent">添加作业</string>
+
+    <string name="THomeworkName">作业名</string>
+    <string name="PTHomeworkName">未填写</string>
+    <string name="TDuedate">截止日期</string>
+    <string name="PTDuedate">请选择作业截止日期</string>
+    <string name="IBDuedate">截止日期选择按钮</string>
+
+    <string name="THomeworkNotificationSetting">作业提醒设置</string>
+    <string name="IHomeworkNotificationSetting">作业提醒设置背景白色</string>
+    <string name="TNotificationTime">提醒时间</string>
+    <string name="TToDeadline">离作业截止时间还有</string>
+    <string name="TDayNumBG">天数数字背景</string>
+    <string name="TDayNum">-</string>
+    <string name="TDeadlineDay">天时</string>
+    <string name="THomeworkMemo">作业备注</string>
+    <string name="PTHomeworkMemo">未填写</string>
+
+    <string name="ICreateEvent">确认创建按钮图</string>
+    <string name="BCreateEvent">确认创建</string>
 
 
     <!-- activity_schoollogo -->
