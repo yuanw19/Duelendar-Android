@@ -139,125 +139,55 @@
                     android:orientation="horizontal">
 
                     <RelativeLayout
-                        android:layout_width="195dp"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="30dpdp"
-                        android:layout_marginLeft="30dp">
+                        android:layout_marginRight="40dp"
+                        android:layout_marginEnd="40dp">
 
                         <ImageView
                             android:id="@+id/IBSchoolImage"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:layout_centerVertical="false"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginLeft="50dp"
                             android:layout_marginTop="45dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
                             android:contentDescription="@string/IBSchoolImage"
                             android:scaleType="fitCenter"
                             app:srcCompat="@drawable/schooldefault" />
 
                         <TextView
                             android:id="@+id/TSchoolNameENG"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginLeft="8dp"
                             android:layout_marginTop="45dp"
                             android:layout_toEndOf="@id/IBSchoolImage"
                             android:layout_toRightOf="@id/IBSchoolImage"
+                            android:gravity="center"
                             android:text="@string/TSchoolNameENG"
                             android:textColor="#000000"
                             android:textSize="13sp" />
 
                         <TextView
                             android:id="@+id/TSchoolNameCHN"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginLeft="8dp"
                             android:layout_marginTop="65dp"
                             android:layout_toEndOf="@id/IBSchoolImage"
                             android:layout_toRightOf="@id/IBSchoolImage"
+                            android:gravity="center"
                             android:text="@string/TSchoolNameCHN"
                             android:textColor="#000000"
                             android:textSize="15sp" />
 
                     </RelativeLayout>
 
-                    <ImageView
-                        android:id="@+id/ISplitA"
-                        android:layout_width="2dp"
-                        android:layout_height="117dp"
-                        android:layout_marginTop="7dp"
-                        android:baselineAlignBottom="false"
-                        android:contentDescription="@string/ISplitA"
-                        android:scaleType="centerCrop"
-                        app:srcCompat="@drawable/verticalline" />
-
-                    <RelativeLayout
-                        android:layout_width="70dp"
-                        android:layout_height="match_parent">
-
-                        <TextView
-                            android:id="@+id/TGradeA"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="32dp"
-                            android:layout_marginLeft="32dp"
-                            android:layout_marginTop="41dp"
-                            android:text="@string/TGradeA"
-                            android:textSize="15sp" />
-
-                        <TextView
-                            android:id="@+id/TGradeB"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="65dp"
-                            android:layout_marginEnd="20dp"
-                            android:layout_marginRight="20dp"
-                            android:text="@string/TGradeB"
-                            android:textColor="#838383"
-                            android:textSize="15sp" />
-
-                    </RelativeLayout>
-
-                    <ImageView
-                        android:id="@+id/ISplitB"
-                        android:layout_width="2dp"
-                        android:layout_height="117dp"
-                        android:layout_marginTop="7dp"
-                        android:baselineAlignBottom="false"
-                        android:contentDescription="@string/ISplitB"
-                        android:scaleType="centerCrop"
-                        app:srcCompat="@drawable/verticalline" />
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <TextView
-                            android:id="@+id/TCoursesA"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="44dp"
-                            android:layout_marginLeft="44dp"
-                            android:layout_marginTop="41dp"
-                            android:text="@string/TCoursesA"
-                            android:textSize="15sp" />
-
-                        <TextView
-                            android:id="@+id/TCoursesB"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="65dp"
-                            android:layout_marginEnd="20dp"
-                            android:layout_marginRight="20dp"
-                            android:text="@string/TCoursesB"
-                            android:textColor="#838383"
-                            android:textSize="15sp" />
-                    </RelativeLayout>
                 </LinearLayout>
             </RelativeLayout>
 
