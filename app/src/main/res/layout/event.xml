@@ -101,7 +101,8 @@
             android:layout_marginRight="5dp"
             android:layout_toEndOf="@id/BToBeDone"
             android:background="#99FFFFFF"
-            android:text="@string/BDone" />
+            android:text="@string/BDone"
+            android:layout_toRightOf="@id/BToBeDone" />
 
     </RelativeLayout>
 

@@ -19,6 +19,15 @@
         <activity android:name=".Controller.CreateEvent"
             android:theme="@style/AppTheme.NoActionBar"> </activity>
 
+        <activity android:name=".Controller.Setting"
+            android:theme="@style/AppTheme.NoActionBar"> </activity>
+
+        <activity android:name=".Controller.SchoolTZ"
+            android:theme="@style/AppTheme.NoActionBar"> </activity>
+
+        <activity android:name=".Controller.SchoolTZMore"
+            android:theme="@style/AppTheme.NoActionBar"> </activity>
+
         <activity
             android:name=".Controller.Main"
             android:label="@string/app_name"

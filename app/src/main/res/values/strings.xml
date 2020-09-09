@@ -68,7 +68,7 @@
     <string name="TAccount">账号</string>
     <string name="IName">昵称标志</string>
     <string name="TName">昵称</string>
-    <string name="PTName">未填写</string>
+    <string name="PTName">未填写用户名</string>
     <string name="IBName">昵称修改按钮</string>
     <string name="ISchool">学校标志</string>
     <string name="TSchool">学校</string>
@@ -327,7 +327,7 @@
     <string name="TBSubjectUnfinish">未完成的作业</string>
     <string name="IBAdd">添加作业</string>
     <string name="TDefaultSubject">默认学科</string>
-    <string name="IVefaultSubject">默认学科图标</string>
+    <string name="IVDefaultSubject">默认学科图标</string>
     <string name="IBDeleteAllHw">delete</string>
     <string name="BDefault1">默认作业1</string>
     <string name="BDefault2">默认作业2</string>

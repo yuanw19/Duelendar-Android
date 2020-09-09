@@ -13,10 +13,11 @@ public class SubjectDatabase extends SQLiteOpenHelper{
     private static final String COLUMN_ID = "id";
     private static final String COLUMN_SUBJECT = "subject";
     private static final String COLUMN_LOGO = "logo";
+    private static final String COLUMN_BGC = "bgc";
     SQLiteDatabase db;
 
     private static final String TABLE_CREATE = "create table subject_table (id integer primary key   ," +
-            "subject text , logo blob);";
+            "subject text , logo text, bgc text);";
 
     public SubjectDatabase(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -28,7 +29,7 @@ public class SubjectDatabase extends SQLiteOpenHelper{
         this.db = db;
     }
 
-    public void insertSubject(String newSubject, byte[] logo) {
+    public void insertSubject(String newSubject, String logo, String bgc) {
         db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         String query = "select * from subject_table";
@@ -37,6 +38,7 @@ public class SubjectDatabase extends SQLiteOpenHelper{
         values.put(COLUMN_ID, LastId);
         values.put(COLUMN_SUBJECT, newSubject);
         values.put(COLUMN_LOGO, logo);
+        values.put(COLUMN_BGC, bgc);
         db.insert(TABLE_NAME, null, values);
         db.close();
     }
@@ -57,12 +59,12 @@ public class SubjectDatabase extends SQLiteOpenHelper{
         return exist;
     }
 
-    public void updateSubject(int id, String newSubject, byte[] logo) {
+    public void updateSubject(int id, String newSubject, String logo, String bgc) {
         db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(COLUMN_SUBJECT, newSubject);
         values.put(COLUMN_LOGO, logo);
-
+        values.put(COLUMN_BGC, bgc);
         db.update(TABLE_NAME, values, "id = "+id, null);
         db.close();
     }
@@ -85,13 +87,38 @@ public class SubjectDatabase extends SQLiteOpenHelper{
         return result;
     }
 
-    //retrieves the logo image
-    public byte[] retrieveSubjectLogoImage() {
+    //retrieves the logo image String
+    public String retrieveSubjectLogo(int id) {
         db = this.getReadableDatabase();
         String query = "select logo from " + TABLE_NAME;
         Cursor cursor = db.rawQuery(query, null);
-        byte[] userCollegeImage =  cursor.getBlob(1);
-        return userCollegeImage;
+        String result = "";
+        if(cursor.moveToFirst()) {
+            do {
+                int currId = cursor.getInt(cursor.getColumnIndex("id"));
+                if(currId == id) {
+                    result = cursor.getString(cursor.getColumnIndex("logo"));
+                }
+            } while(cursor.moveToNext());
+        }
+        return result;
+    }
+
+    //retrieves the logo background String
+    public String retrieveSubjectBGM(int id) {
+        db = this.getReadableDatabase();
+        String query = "select logo from " + TABLE_NAME;
+        Cursor cursor = db.rawQuery(query, null);
+        String result = "";
+        if(cursor.moveToFirst()) {
+            do {
+                int currId = cursor.getInt(cursor.getColumnIndex("id"));
+                if(currId == id) {
+                    result = cursor.getString(cursor.getColumnIndex("bgc"));
+                }
+            } while(cursor.moveToNext());
+        }
+        return result;
     }
 
     public int getProfilesCount() {

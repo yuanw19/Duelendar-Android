@@ -74,37 +74,13 @@
                     android:id="@+id/TUsername"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     android:text="@string/TUsername"
                     android:textColor="#FFFFFF"
                     android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/TUserIDA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="25dp"
-                    android:layout_below="@id/TUsername"
-                    android:layout_alignStart="@id/TUsername"
-                    android:layout_alignLeft="@id/TUsername"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/TUserIDA"
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:id="@+id/TUserIDB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="25dp"
-                    android:layout_below="@id/TUsername"
-                    android:layout_marginTop="5dp"
-                    android:layout_toEndOf="@id/TUserIDA"
-                    android:layout_toRightOf="@id/TUserIDA"
-                    android:gravity="center"
-                    android:text="@string/TUserIDB"
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
 
                 <ImageButton
                     android:id="@+id/IBSetting"

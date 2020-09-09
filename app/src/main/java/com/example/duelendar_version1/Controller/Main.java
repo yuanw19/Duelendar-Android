@@ -3,8 +3,10 @@ package com.example.duelendar_version1.Controller;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.media.tv.TvContract;
 import android.os.Build;
 import android.os.Bundle;
+import android.service.autofill.UserData;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,12 +17,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.duelendar_version1.Model.EventDatabase;
 import com.example.duelendar_version1.Model.SubjectDatabase;
+import com.example.duelendar_version1.Model.User;
+import com.example.duelendar_version1.Model.UserDatabase;
 import com.example.duelendar_version1.R;
 
 import java.util.ArrayList;
@@ -28,13 +33,18 @@ import java.util.List;
 
 public class Main extends AppCompatActivity {
     private ImageButton CreateSubject;
+    private ImageButton OpenSetting;
     private Button TemporaryButton;
+    private TextView UserName;
+    private String UserNameString;
     private RelativeLayout TemporaryLayout;
     private int DBid;
     private int ButtonId;
     private int LayoutId;
     private int SettingId;
-    private int LogoBack;
+    private String LogoBackString;
+    private String LogoImageString;
+    private int LogoBackId;
     private boolean mIsShowing1 = false;
     private boolean mIsShowing2 = false;
     private PopupWindow popupWindow1;
@@ -43,14 +53,17 @@ public class Main extends AppCompatActivity {
     private WindowManager.LayoutParams params2;
     private final static int CREATE_SUBJECT_REQUEST_CODE = 1;
     private final static int CHECK_SUBJECT_REQUEST_CODE = 2;
+    private final static int SETTING_REQUEST_CODE = 3;
     private EventDatabase EventDb = new EventDatabase(this);
     private SubjectDatabase SubjectDb = new SubjectDatabase(this);
+    private UserDatabase UserDb = new UserDatabase(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         params1 = getWindow().getAttributes();//popup window code
         params2 = getWindow().getAttributes();//popup window code
+        UserName = (TextView) findViewById(R.id.TUsername);
         //create subject
         CreateSubject = (ImageButton)findViewById(R.id.BAddSubject);
         CreateSubject.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +75,18 @@ public class Main extends AppCompatActivity {
             }
         });
         //
+        //open setting
+        OpenSetting = (ImageButton) findViewById(R.id.IBSetting);
+        OpenSetting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!mIsShowing1 && !mIsShowing2) {
+                    openSetting();
+                }
+            }
+        });
+        //
+
     }
 
     public void openCreateSubject(){
@@ -79,13 +104,19 @@ public class Main extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openSetting(){
+        Intent intent = new Intent(this,Setting.class);
+        startActivityForResult(intent, SETTING_REQUEST_CODE);
+    }
+
+
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult(requestCode, resultCode, data);
         LinearLayout ll = (LinearLayout) findViewById(R.id.SubjectLayout);
         RelativeLayout rl = new RelativeLayout(this);
         //rlpButton
-        RelativeLayout.LayoutParams rlpButton = new RelativeLayout.LayoutParams(760, 160);
+        RelativeLayout.LayoutParams rlpButton = new RelativeLayout.LayoutParams(1000, 160);
         Button EventButton = new Button(this);
         EventButton.setAllCaps(false);
         //rlpSetting
@@ -103,27 +134,34 @@ public class Main extends AppCompatActivity {
                 ButtonId = DBid + 1;
                 SettingId = DBid + 100000;
                 LayoutId = DBid + 200000;
+                LogoBackId = DBid + 300000;
                 EventButton.setId(ButtonId);
                 rl.setId(LayoutId);
                 ButtonSetting.setId(SettingId);
+                Logo.setId(LogoBackId);
                 //
                 //set logo color
-                LogoBack = data.getIntExtra("LogoBackgroundColor", -1);
-                switch (LogoBack) {
-                    case 1: Logo.setBackgroundResource(R.drawable.redb);
+                //LogoBackString = SubjectDb.retrieveSubjectBGM(id);
+                //
+                /*switch (LogoBackString) {
+                    case "Red": Logo.setBackgroundResource(R.drawable.redb);
                         break;
-                    case 2: Logo.setBackgroundResource(R.drawable.blueb);
+                    case "Blue": Logo.setBackgroundResource(R.drawable.blueb);
                         break;
-                    case 3: Logo.setBackgroundResource(R.drawable.goldbuttom);
+                    case "Yellow": Logo.setBackgroundResource(R.drawable.goldbuttom);
                         break;
-                    case 4: Logo.setBackgroundResource(R.drawable.greenb);
+                    case "Green": Logo.setBackgroundResource(R.drawable.greenb);
                         break;
-                    case 5: Logo.setBackgroundResource(R.drawable.pinkb);
+                    case "Pink": Logo.setBackgroundResource(R.drawable.pinkb);
                         break;
-                    case 6: Logo.setBackgroundResource(R.drawable.purpleb);
+                    case "Purple": Logo.setBackgroundResource(R.drawable.purpleb);
                         break;
                     default: Logo.setBackgroundResource(R.drawable.wbuttom);
                 }
+                */
+                //
+                //set logo image
+                //LogoImageString = SubjectDb.retrieveSubjectLogo(id);
                 //
                 //set event button attribute
                 EventButton.setTextColor(Color.WHITE);
@@ -136,7 +174,7 @@ public class Main extends AppCompatActivity {
                 rlpButton.addRule(RelativeLayout.CENTER_HORIZONTAL);
                 rlpButton.setMargins(0, 70, 0, 70);
                 rlpSetting.addRule(RelativeLayout.ALIGN_RIGHT, EventButton.getId());
-                rlpSetting.setMargins(0, 70, 40, 70);
+                rlpSetting.setMargins(200, 70, 40, 70);
                 rlpSetting.addRule(RelativeLayout.CENTER_VERTICAL);
                 rlpBackground.setMargins(5,70,0,0);
                 rlpBackground.addRule(RelativeLayout.ALIGN_PARENT_LEFT, EventButton.getId());
@@ -158,6 +196,7 @@ public class Main extends AppCompatActivity {
                             DBid = ButtonId - 1;
                             SettingId = DBid + 100000;
                             LayoutId = DBid + 200000;
+                            LogoBackId = DBid + 300000;
                             openEvent();
                         }
                     }
@@ -170,6 +209,7 @@ public class Main extends AppCompatActivity {
                             DBid = SettingId - 100000;
                             ButtonId = DBid + 1;
                             LayoutId = DBid + 200000;
+                            LogoBackId = DBid + 300000;
                             DeleteSubjectPopup(v);
                         }
                     }
@@ -184,6 +224,13 @@ public class Main extends AppCompatActivity {
                 TemporaryButton = (Button) findViewById(ButtonId);
                 TemporaryButton.setText(SubjectDb.searchSubjectName(DBid));
             }
+        }
+        if (resultCode == 1){
+            if (requestCode == SETTING_REQUEST_CODE){
+                //UserNameString = UserDb.retrieveUserLocation();
+                UserName.setText(UserNameString);
+            }
+
         }
     }
 
