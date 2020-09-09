@@ -93,9 +93,10 @@ public class SubjectDatabase extends SQLiteOpenHelper{
         String query = "select logo from " + TABLE_NAME;
         Cursor cursor = db.rawQuery(query, null);
         String result = "";
+        int currId;
         if(cursor.moveToFirst()) {
             do {
-                int currId = cursor.getInt(cursor.getColumnIndex("id"));
+                currId = cursor.getInt(cursor.getColumnIndex("id"));
                 if(currId == id) {
                     result = cursor.getString(cursor.getColumnIndex("logo"));
                 }

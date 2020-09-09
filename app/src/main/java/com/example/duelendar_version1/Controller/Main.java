@@ -161,7 +161,8 @@ public class Main extends AppCompatActivity {
                 */
                 //
                 //set logo image
-                //LogoImageString = SubjectDb.retrieveSubjectLogo(id);
+                System.out.println(id);
+                LogoImageString = SubjectDb.retrieveSubjectLogo(id);
                 //
                 //set event button attribute
                 EventButton.setTextColor(Color.WHITE);

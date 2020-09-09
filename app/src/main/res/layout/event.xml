@@ -6,137 +6,532 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
+    android:contentDescription="@string/THW1Done"
     android:orientation="vertical"
     tools:context=".Controller.Event">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="57dp"
-        android:background="#00000000">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/TBSubjectUnfinish"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#00000000"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            app:title="Duelendar"
-            app:titleMarginStart="155dp"
-            app:titleTextColor="#FFFFFF" />
-
-        <ImageButton
-            android:id="@+id/IBUnfinishHwReturnMain"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="15dp"
-            android:background="#0064FFDA"
-            android:contentDescription="@string/IBUnfinishHwReturnMain"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/abc_vector_test"
-            tools:ignore="PrivateResource" />
-
-        <ImageButton
-            android:id="@+id/IBAdd"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_alignRight="@id/TBSubjectUnfinish"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="15dp"
-            android:background="#00FFFFFF"
-            android:scaleType="fitCenter"
-            android:src="@drawable/plus" />
-
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="58dp">
-
-        <TextView
-            android:id="@+id/TDefaultSubject"
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/et_style"
-            android:gravity="center"
-            android:text="@string/TDefaultSubject"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+        android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/IVDefaultSubject"
-            android:layout_width="58dp"
-            android:layout_height="58dp"
-            android:layout_marginLeft="10dp"
-            android:contentDescription="@string/IVDefaultSubject"
-            android:src="@drawable/subject" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp">
-
-        <Button
-            android:id="@+id/BToBeDone"
-            android:layout_width="195dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:background="#99FFFCFC"
-            android:text="@string/BToBeDone" />
-
-        <Button
-            android:id="@+id/BDone"
-            android:layout_width="195dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_toEndOf="@id/BToBeDone"
-            android:background="#99FFFFFF"
-            android:text="@string/BDone"
-            android:layout_toRightOf="@id/BToBeDone" />
-
-    </RelativeLayout>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+            android:id="@+id/IEventBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/IEventBackground"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/mainbg3" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/BDefault1"
-                android:layout_width="match_parent"
-                android:layout_height="88dp"
-                android:layout_margin="10dp"
-                android:background="#45FFFFFF"
-                android:contentDescription="@string/BDefault1"
-                android:text="@string/BDefault1"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp" />
 
-            <Button
-                android:id="@+id/BDefault2"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="88dp"
-                android:layout_margin="10dp"
-                android:background="#45FFFFFF"
-                android:contentDescription="@string/BDefault2"
-                android:text="@string/BDefault2"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp" />
+                android:layout_height="57dp"
+                android:background="#00000000">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/TBSubjectUnfinish"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="?attr/actionBarTheme"
+                    app:title="DefaultSubject"
+                    app:titleMarginStart="139dp"
+                    app:titleTextColor="#FFFFFF" />
+
+                <ImageButton
+                    android:id="@+id/IBUnfinishHwReturnMain"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="#0064FFDA"
+                    android:contentDescription="@string/IBUnfinishHwReturnMain"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/abc_vector_test"
+                    tools:ignore="PrivateResource" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="79dp">
+
+                <ImageView
+                    android:id="@+id/IVDefaultSubject"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/IVDefaultSubject"
+                    app:srcCompat="@drawable/whitewrite" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp">
+
+                <ImageView
+                    android:id="@+id/IAdd"
+                    android:layout_width="140dp"
+                    android:layout_height="55dp"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/IAdd"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/rpbutton" />
+
+                <Button
+                    android:id="@+id/BAdd"
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:background="#00FFFFFF"
+                    android:text="@string/BAdd"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/BDone"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#00FFFCFC"
+                    android:contentDescription="@string/BDone"
+                    android:text="@string/BDone"
+                    android:textColor="#FB4949" />
+
+                <TextView
+                    android:id="@+id/TDoneMark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/BDone"
+                    android:layout_alignStart="@id/BDone"
+                    android:layout_alignLeft="@id/BDone"
+                    android:layout_marginLeft="41dp"
+                    android:layout_marginRight="41dp"
+                    android:contentDescription="@string/TDoneMark"
+                    android:text="@string/TDoneMark"
+                    android:textColor="#FB207F"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/BToBeDone"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@id/BDone"
+                    android:layout_toRightOf="@id/BDone"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="@string/BToBeDone"
+                    android:text="@string/BToBeDone"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/TToBeDoneMark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/BDone"
+                    android:layout_alignStart="@id/BToBeDone"
+                    android:layout_alignLeft="@id/BToBeDone"
+                    android:layout_marginLeft="41dp"
+                    android:layout_marginRight="41dp"
+                    android:contentDescription="@string/TToBeDoneMark"
+                    android:text="@string/TDoneMark"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <TextView
+                            android:id="@+id/THW1Done"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/THW1Done"
+                            android:textColor="#89E9FA"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/TDone1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/THW1Done"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_toRightOf="@id/THW1Done"
+                            android:layout_toEndOf="@id/THW1Done"
+                            android:contentDescription="@string/TDone1"
+                            android:text="@string/TDone1"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/THW1DoneMemo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/THW1Done"
+                            android:layout_alignLeft="@id/THW1Done"
+                            android:layout_alignStart="@id/THW1Done"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/THW1DoneMemo"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:id="@+id/IHW1DoneDayBG"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="290dp"
+                            android:layout_marginStart="290dp"
+                            android:contentDescription="@string/IHW1DoneDayBG"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/blueb" />
+
+                        <TextView
+                            android:id="@+id/THW1DoneDayNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/IHW1DoneDayBG"
+                            android:layout_alignStart="@id/IHW1DoneDayBG"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginLeft="12dp"
+                            android:text="@string/THW1DoneDayNum"
+                            android:textColor="#FFFFFF"
+                            android:textSize="23sp" />
+
+                        <TextView
+                            android:id="@+id/THW1DoneDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/IHW1DoneDayBG"
+                            android:layout_toEndOf="@id/IHW1DoneDayBG"
+                            android:text="@string/THW1DoneDay"
+                            android:textColor="#FFFFFF" />
+
+                        <ImageButton
+                            android:id="@+id/BHW1Done"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toEndOf="@id/THW1DoneDay"
+                            android:layout_toRightOf="@id/THW1DoneDay"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="@string/BHW1Done"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/arrow" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <TextView
+                            android:id="@+id/THW2Done"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/THW2Done"
+                            android:textColor="#89E9FA"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/TDone2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/THW2Done"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toEndOf="@id/THW2Done"
+                            android:layout_toRightOf="@id/THW2Done"
+                            android:contentDescription="@string/TDone2"
+                            android:text="@string/TDone2"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/THW2DoneMemo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/THW2Done"
+                            android:layout_alignStart="@id/THW2Done"
+                            android:layout_alignLeft="@id/THW2Done"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/THW2DoneMemo"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:id="@+id/IHW2DoneDayBG"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="290dp"
+                            android:layout_marginLeft="290dp"
+                            android:contentDescription="@string/IHW2DoneDayBG"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/blueb" />
+
+                        <TextView
+                            android:id="@+id/THW2DoneDayNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@id/IHW2DoneDayBG"
+                            android:layout_alignLeft="@id/IHW2DoneDayBG"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginLeft="12dp"
+                            android:text="@string/THW2DoneDayNum"
+                            android:textColor="#FFFFFF"
+                            android:textSize="23sp" />
+
+                        <TextView
+                            android:id="@+id/THW2DoneDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@id/IHW2DoneDayBG"
+                            android:layout_toRightOf="@id/IHW2DoneDayBG"
+                            android:text="@string/THW2DoneDay"
+                            android:textColor="#FFFFFF" />
+
+                        <ImageButton
+                            android:id="@+id/BHW2Done"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toEndOf="@id/THW2DoneDay"
+                            android:layout_toRightOf="@id/THW2DoneDay"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="@string/BHW2Done"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/arrow" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <TextView
+                            android:id="@+id/THW1ToBeDone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/THW1ToBeDone"
+                            android:textColor="#FB4949"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/TToBeDone1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/THW1ToBeDone"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toEndOf="@id/THW1ToBeDone"
+                            android:layout_toRightOf="@id/THW1ToBeDone"
+                            android:contentDescription="@string/TToBeDone1"
+                            android:text="@string/TToBeDone1"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/THW1ToBeDoneMemo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/THW1ToBeDone"
+                            android:layout_alignStart="@id/THW1ToBeDone"
+                            android:layout_alignLeft="@id/THW1ToBeDone"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/THW1ToBeDoneMemo"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:id="@+id/IHW1ToBeDoneDayBG"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="290dp"
+                            android:layout_marginLeft="290dp"
+                            android:contentDescription="@string/IHW1ToBeDoneDayBG"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/rpbutton" />
+
+                        <TextView
+                            android:id="@+id/THW1ToBeDoneDayNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@id/IHW1ToBeDoneDayBG"
+                            android:layout_alignLeft="@id/IHW1ToBeDoneDayBG"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginLeft="12dp"
+                            android:text="@string/THW1ToBeDoneDayNum"
+                            android:textColor="#FFFFFF"
+                            android:textSize="23sp" />
+
+                        <TextView
+                            android:id="@+id/THW1ToBeDoneDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@id/IHW1ToBeDoneDayBG"
+                            android:layout_toRightOf="@id/IHW1ToBeDoneDayBG"
+                            android:text="@string/THW1ToBeDoneDay"
+                            android:textColor="#FFFFFF" />
+
+                        <ImageButton
+                            android:id="@+id/BHW1ToBeDone"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toEndOf="@id/THW1ToBeDoneDay"
+                            android:layout_toRightOf="@id/THW1ToBeDoneDay"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="@string/BHW1ToBeDone"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/arrow" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <TextView
+                            android:id="@+id/THW2ToBeDone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/THW2ToBeDone"
+                            android:textColor="#FB4949"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/TToBeDone2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/THW2ToBeDone"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toEndOf="@id/THW2ToBeDone"
+                            android:layout_toRightOf="@id/THW2ToBeDone"
+                            android:contentDescription="@string/TToBeDone2"
+                            android:text="@string/TToBeDone2"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/THW2ToBeDoneMemo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/THW2ToBeDone"
+                            android:layout_alignStart="@id/THW2ToBeDone"
+                            android:layout_alignLeft="@id/THW2ToBeDone"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/THW2ToBeDoneMemo"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:id="@+id/IHW2ToBeDoneDayBG"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="290dp"
+                            android:layout_marginLeft="290dp"
+                            android:contentDescription="@string/IHW2ToBeDoneDayBG"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/rpbutton" />
+
+                        <TextView
+                            android:id="@+id/THW2ToBeDoneDayNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@id/IHW2ToBeDoneDayBG"
+                            android:layout_alignLeft="@id/IHW2ToBeDoneDayBG"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginLeft="12dp"
+                            android:text="@string/THW2ToBeDoneDayNum"
+                            android:textColor="#FFFFFF"
+                            android:textSize="23sp" />
+
+                        <TextView
+                            android:id="@+id/THW2ToBeDoneDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@id/IHW2ToBeDoneDayBG"
+                            android:layout_toRightOf="@id/IHW2ToBeDoneDayBG"
+                            android:text="@string/THW2ToBeDoneDay"
+                            android:textColor="#FFFFFF" />
+
+                        <ImageButton
+                            android:id="@+id/BHW2ToBeDone"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toEndOf="@id/THW2ToBeDoneDay"
+                            android:layout_toRightOf="@id/THW2ToBeDoneDay"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="@string/BHW2ToBeDone"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/arrow" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
         </LinearLayout>
-    </ScrollView>
+    </RelativeLayout>
 
 </LinearLayout>

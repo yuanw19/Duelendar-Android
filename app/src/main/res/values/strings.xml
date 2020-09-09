@@ -68,7 +68,7 @@
     <string name="TAccount">账号</string>
     <string name="IName">昵称标志</string>
     <string name="TName">昵称</string>
-    <string name="PTName">未填写用户名</string>
+    <string name="PTName">未填写</string>
     <string name="IBName">昵称修改按钮</string>
     <string name="ISchool">学校标志</string>
     <string name="TSchool">学校</string>
@@ -323,21 +323,96 @@
 
 
     <!-- event-->
-    <string name="IBUnfinishHwReturnMain">return</string>
+    <string name="IEventBackground">Event背景</string>
     <string name="TBSubjectUnfinish">未完成的作业</string>
-    <string name="IBAdd">添加作业</string>
-    <string name="TDefaultSubject">默认学科</string>
+    <string name="IBUnfinishHwReturnMain">return</string>
     <string name="IVDefaultSubject">默认学科图标</string>
-    <string name="IBDeleteAllHw">delete</string>
-    <string name="BDefault1">默认作业1</string>
-    <string name="BDefault2">默认作业2</string>
-    <string name="BToBeDone">待完成</string>
+    <string name="IAdd">添加作业背景</string>
+    <string name="BAdd">+ 添加作业</string>
     <string name="BDone">已完成</string>
-    <string name="BPastDueHw">作业:过时15分钟</string>
-    <string name="SPastDueHwSwitch">已完成?</string>
-    <string name="BDefaultHwUndone">默认作业:距离截止15分钟</string>
-    <string name="SDefaultHwUndoneSwitch">已完成?</string>
+    <string name="TDoneMark">—</string>
+    <string name="BToBeDone">待完成</string>
+    <string name="TToBeDoneMark">—</string>
 
+    <string name="THW1Done">Homework1</string>
+    <string name="TDone1">已经完成</string>
+    <string name="THW1DoneMemo">备注：这里显示作业备注里的内容</string>
+    <string name="IHW1DoneDayBG">已经完成作业1天数背景</string>
+    <string name="THW1DoneDayNum">00</string>
+    <string name="THW1DoneDay">天</string>
+    <string name="BHW1Done">">"修改按钮</string>
+
+    <string name="THW2Done">Homework2</string>
+    <string name="TDone2">已经完成</string>
+    <string name="THW2DoneMemo">备注：这里显示作业备注里的内容</string>
+    <string name="IHW2DoneDayBG">已经完成作业2天数背景</string>
+    <string name="THW2DoneDayNum">00</string>
+    <string name="THW2DoneDay">天</string>
+    <string name="BHW2Done">">"修改按钮</string>
+
+    <string name="THW3Done">Homework3</string>
+    <string name="TDone3">已经完成</string>
+    <string name="THW3DoneMemo">备注：这里显示作业备注里的内容</string>
+    <string name="IHW3DoneDayBG">已经完成作业3天数背景</string>
+    <string name="THW3DoneDayNum">00</string>
+    <string name="THW3DoneDay">天</string>
+    <string name="BHW3Done">">"修改按钮</string>
+
+    <string name="THW4Done">Homework4</string>
+    <string name="TDone4">已经完成</string>
+    <string name="THW4DoneMemo">备注：这里显示作业备注里的内容</string>
+    <string name="IHW4DoneDayBG">已经完成作业4天数背景</string>
+    <string name="THW4DoneDayNum">00</string>
+    <string name="THW4DoneDay">天</string>
+    <string name="BHW4Done">">"修改按钮</string>
+
+    <string name="THW5Done">Homework5</string>
+    <string name="TDone5">已经完成</string>
+    <string name="THW5DoneMemo">备注：这里显示作业备注里的内容</string>
+    <string name="IHW5DoneDayBG">已经完成作业5天数背景</string>
+    <string name="THW5DoneDayNum">00</string>
+    <string name="THW5DoneDay">天</string>
+    <string name="BHW5Done">">"修改按钮</string>
+
+    <string name="THW1ToBeDone">Homework1</string>
+    <string name="TToBeDone1">距离截止还有</string>
+    <string name="THW1ToBeDoneMemo">备注：这里显示作业备注里的内容</string>
+    <string name="IHW1ToBeDoneDayBG">待完成作业1天数背景</string>
+    <string name="THW1ToBeDoneDayNum">00</string>
+    <string name="THW1ToBeDoneDay">天</string>
+    <string name="BHW1ToBeDone">">"修改按钮</string>
+
+    <string name="THW2ToBeDone">Homework2</string>
+    <string name="TToBeDone2">距离截止还有</string>
+    <string name="THW2ToBeDoneMemo">备注：这里显示作业备注里的内容</string>
+    <string name="IHW2ToBeDoneDayBG">待完成作业2天数背景</string>
+    <string name="THW2ToBeDoneDayNum">00</string>
+    <string name="THW2ToBeDoneDay">天</string>
+    <string name="BHW2ToBeDone">">"修改按钮</string>
+
+    <string name="THW3ToBeDone">Homework3</string>
+    <string name="TToBeDone3">距离截止还有</string>
+    <string name="THW3ToBeDoneMemo">备注：这里显示作业备注里的内容</string>
+    <string name="IHW3ToBeDoneDayBG">待完成作业3天数背景</string>
+    <string name="THW3ToBeDoneDayNum">00</string>
+    <string name="THW3ToBeDoneDay">天</string>
+    <string name="BHW3ToBeDone">">"修改按钮</string>
+
+    <string name="THW4ToBeDone">Homework4</string>
+    <string name="TToBeDone4">距离截止还有</string>
+    <string name="THW4ToBeDoneMemo">备注：这里显示作业备注里的内容</string>
+    <string name="IHW4ToBeDoneDayBG">待完成作业4天数背景</string>
+    <string name="THW4ToBeDoneDayNum">00</string>
+    <string name="THW4ToBeDoneDay">天</string>
+    <string name="BHW4ToBeDone">">"修改按钮</string>
+
+    <string name="THW5ToBeDone">Homework5</string>
+    <string name="TToBeDone5">距离截止还有</string>
+    <string name="THW5ToBeDoneMemo">备注：这里显示作业备注里的内容</string>
+    <string name="IHW5ToBeDoneDayBG">待完成作业5天数背景</string>
+    <string name="THW5ToBeDoneDayNum">00</string>
+    <string name="THW5ToBeDoneDay">天</string>
+    <string name="BHW5ToBeDone">">"修改按钮</string>
 
 
     <!-- event_unfinish-->
