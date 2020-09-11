@@ -340,7 +340,7 @@
     <string name="IHW1DoneDayBG">已经完成作业1天数背景</string>
     <string name="THW1DoneDayNum">00</string>
     <string name="THW1DoneDay">天</string>
-    <string name="BHW1Done">">"修改按钮</string>
+    <string name="BHW1Done">修改按钮</string>
 
     <string name="THW2Done">Homework2</string>
     <string name="TDone2">已经完成</string>
@@ -348,7 +348,7 @@
     <string name="IHW2DoneDayBG">已经完成作业2天数背景</string>
     <string name="THW2DoneDayNum">00</string>
     <string name="THW2DoneDay">天</string>
-    <string name="BHW2Done">">"修改按钮</string>
+    <string name="BHW2Done">修改按钮</string>
 
     <string name="THW3Done">Homework3</string>
     <string name="TDone3">已经完成</string>
@@ -356,7 +356,7 @@
     <string name="IHW3DoneDayBG">已经完成作业3天数背景</string>
     <string name="THW3DoneDayNum">00</string>
     <string name="THW3DoneDay">天</string>
-    <string name="BHW3Done">">"修改按钮</string>
+    <string name="BHW3Done">修改按钮</string>
 
     <string name="THW4Done">Homework4</string>
     <string name="TDone4">已经完成</string>
@@ -364,7 +364,7 @@
     <string name="IHW4DoneDayBG">已经完成作业4天数背景</string>
     <string name="THW4DoneDayNum">00</string>
     <string name="THW4DoneDay">天</string>
-    <string name="BHW4Done">">"修改按钮</string>
+    <string name="BHW4Done">修改按钮</string>
 
     <string name="THW5Done">Homework5</string>
     <string name="TDone5">已经完成</string>
@@ -372,7 +372,7 @@
     <string name="IHW5DoneDayBG">已经完成作业5天数背景</string>
     <string name="THW5DoneDayNum">00</string>
     <string name="THW5DoneDay">天</string>
-    <string name="BHW5Done">">"修改按钮</string>
+    <string name="BHW5Done">修改按钮</string>
 
     <string name="THW1ToBeDone">Homework1</string>
     <string name="TToBeDone1">距离截止还有</string>
@@ -380,7 +380,7 @@
     <string name="IHW1ToBeDoneDayBG">待完成作业1天数背景</string>
     <string name="THW1ToBeDoneDayNum">00</string>
     <string name="THW1ToBeDoneDay">天</string>
-    <string name="BHW1ToBeDone">">"修改按钮</string>
+    <string name="BHW1ToBeDone">修改按钮</string>
 
     <string name="THW2ToBeDone">Homework2</string>
     <string name="TToBeDone2">距离截止还有</string>
@@ -388,7 +388,7 @@
     <string name="IHW2ToBeDoneDayBG">待完成作业2天数背景</string>
     <string name="THW2ToBeDoneDayNum">00</string>
     <string name="THW2ToBeDoneDay">天</string>
-    <string name="BHW2ToBeDone">">"修改按钮</string>
+    <string name="BHW2ToBeDone">修改按钮</string>
 
     <string name="THW3ToBeDone">Homework3</string>
     <string name="TToBeDone3">距离截止还有</string>
@@ -396,7 +396,7 @@
     <string name="IHW3ToBeDoneDayBG">待完成作业3天数背景</string>
     <string name="THW3ToBeDoneDayNum">00</string>
     <string name="THW3ToBeDoneDay">天</string>
-    <string name="BHW3ToBeDone">">"修改按钮</string>
+    <string name="BHW3ToBeDone">修改按钮</string>
 
     <string name="THW4ToBeDone">Homework4</string>
     <string name="TToBeDone4">距离截止还有</string>
@@ -404,7 +404,7 @@
     <string name="IHW4ToBeDoneDayBG">待完成作业4天数背景</string>
     <string name="THW4ToBeDoneDayNum">00</string>
     <string name="THW4ToBeDoneDay">天</string>
-    <string name="BHW4ToBeDone">">"修改按钮</string>
+    <string name="BHW4ToBeDone">修改按钮</string>
 
     <string name="THW5ToBeDone">Homework5</string>
     <string name="TToBeDone5">距离截止还有</string>
@@ -412,7 +412,27 @@
     <string name="IHW5ToBeDoneDayBG">待完成作业5天数背景</string>
     <string name="THW5ToBeDoneDayNum">00</string>
     <string name="THW5ToBeDoneDay">天</string>
-    <string name="BHW5ToBeDone">">"修改按钮</string>
+    <string name="BHW5ToBeDone">修改按钮</string>
+
+
+    <!-- singleevent-->
+    <string name="IBSingleEventReturnMain">作业详细内容返回主界面按钮</string>
+    <string name="THWTitle">Event Name</string>
+    <string name="TToHwDueDate">距离作业截止还有</string>
+    <string name="BHwDueDays">作业截止时间背景</string>
+    <string name="THwDueDays">0</string>
+    <string name="THwDueDateDay">天</string>
+    <string name="TDueDate">截止日期：</string>
+    <string name="TDueDateYearA">2020</string>
+    <string name="TDueDateYearB">年</string>
+    <string name="TDueDateMonthA">0</string>
+    <string name="TDueDateMonthB">月</string>
+    <string name="TDueDateDayA">0</string>
+    <string name="TDueDateDayB">日</string>
+    <string name="IEditHW">编辑作业按钮背景</string>
+    <string name="BEditHW">编辑作业</string>
+    <string name="IDeleteHW">删除作业按钮背景</string>
+    <string name="BDeleteHW">删除作业</string>
 
 
     <!-- event_unfinish-->
