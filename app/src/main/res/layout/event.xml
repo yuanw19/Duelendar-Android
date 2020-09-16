@@ -99,11 +99,12 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="68dp"
-                android:layout_marginBottom="15dp">
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="5dp">
 
                 <Button
-                    android:id="@+id/BDone"
+                    android:id="@+id/BToBeDone"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
@@ -112,51 +113,24 @@
                     android:layout_marginEnd="5dp"
                     android:layout_marginRight="5dp"
                     android:background="#00FFFCFC"
-                    android:contentDescription="@string/BDone"
-                    android:text="@string/BDone"
+                    android:contentDescription="@string/BToBeDone"
+                    android:text="@string/BToBeDone"
                     android:textColor="#FB4949" />
 
-                <TextView
-                    android:id="@+id/TDoneMark"
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_below="@id/BDone"
-                    android:layout_alignStart="@id/BDone"
-                    android:layout_alignLeft="@id/BDone"
-                    android:layout_marginLeft="41dp"
-                    android:layout_marginRight="41dp"
-                    android:contentDescription="@string/TDoneMark"
-                    android:text="@string/TDoneMark"
-                    android:textColor="#FB207F"
-                    android:textSize="25sp" />
 
                 <Button
-                    android:id="@+id/BToBeDone"
+                    android:id="@+id/BDone"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="5dp"
                     android:layout_marginLeft="5dp"
-                    android:layout_toEndOf="@id/BDone"
-                    android:layout_toRightOf="@id/BDone"
+                    android:layout_toEndOf="@id/BToBeDone"
+                    android:layout_toRightOf="@id/BToBeDone"
                     android:background="#00FFFFFF"
-                    android:contentDescription="@string/BToBeDone"
-                    android:text="@string/BToBeDone"
+                    android:contentDescription="@string/BDone"
+                    android:text="@string/BDone"
                     android:textColor="#FFFFFF" />
-
-                <TextView
-                    android:id="@+id/TToBeDoneMark"
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_below="@id/BDone"
-                    android:layout_alignStart="@id/BToBeDone"
-                    android:layout_alignLeft="@id/BToBeDone"
-                    android:layout_marginLeft="41dp"
-                    android:layout_marginRight="41dp"
-                    android:contentDescription="@string/TToBeDoneMark"
-                    android:text="@string/TDoneMark"
-                    android:textColor="#000000"
-                    android:textSize="25sp" />
 
             </RelativeLayout>
 
