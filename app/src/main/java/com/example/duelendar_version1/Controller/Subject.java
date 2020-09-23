@@ -28,7 +28,7 @@ import java.io.ByteArrayOutputStream;
 public class Subject extends AppCompatActivity {
     private ImageButton ReturnMain;
     private Button CreateSubject;
-    private int LogoBack;
+    private String LogoBackString;
     //logo color IB
     private ImageButton IBRed;
     private ImageButton IBBlue;
@@ -97,6 +97,7 @@ public class Subject extends AppCompatActivity {
     //Constants
     private String ColorString = "#FFA500";
     private ImageButton TempLogo;
+    private String LogoString;
     private EditText ETSubjectName;
     private String UserSubjectName;
     private int UserSubjectId;
@@ -126,7 +127,7 @@ public class Subject extends AppCompatActivity {
                 IVCorrectGreen.setVisibility(View.GONE);
                 IVCorrectPink.setVisibility(View.GONE);
                 IVCorrectPurple.setVisibility(View.GONE);
-                LogoBack = 1;
+                LogoBackString = "Red";
             }
         });
         IBBlue = (ImageButton) findViewById(R.id.IBBlue);
@@ -139,7 +140,7 @@ public class Subject extends AppCompatActivity {
                 IVCorrectGreen.setVisibility(View.GONE);
                 IVCorrectPink.setVisibility(View.GONE);
                 IVCorrectPurple.setVisibility(View.GONE);
-                LogoBack = 2;
+                LogoBackString = "Blue";
             }
         });
         IBYellow = (ImageButton) findViewById(R.id.IBYellow);
@@ -152,7 +153,7 @@ public class Subject extends AppCompatActivity {
                 IVCorrectGreen.setVisibility(View.GONE);
                 IVCorrectPink.setVisibility(View.GONE);
                 IVCorrectPurple.setVisibility(View.GONE);
-                LogoBack = 3;
+                LogoBackString = "Yellow";
             }
         });
         IBGreen = (ImageButton) findViewById(R.id.IBGreen);
@@ -165,7 +166,7 @@ public class Subject extends AppCompatActivity {
                 IVCorrectGreen.setVisibility(View.VISIBLE);
                 IVCorrectPink.setVisibility(View.GONE);
                 IVCorrectPurple.setVisibility(View.GONE);
-                LogoBack = 4;
+                LogoBackString = "Green";
             }
         });
         IBPink = (ImageButton) findViewById(R.id.IBPink);
@@ -178,7 +179,7 @@ public class Subject extends AppCompatActivity {
                 IVCorrectGreen.setVisibility(View.GONE);
                 IVCorrectPink.setVisibility(View.VISIBLE);
                 IVCorrectPurple.setVisibility(View.GONE);
-                LogoBack = 5;
+                LogoBackString = "Pink";
             }
         });
         IBPurple = (ImageButton) findViewById(R.id.IBPurple);
@@ -191,7 +192,7 @@ public class Subject extends AppCompatActivity {
                 IVCorrectGreen.setVisibility(View.GONE);
                 IVCorrectPink.setVisibility(View.GONE);
                 IVCorrectPurple.setVisibility(View.VISIBLE);
-                LogoBack = 6;
+                LogoBackString = "Purple";
             }
         });
         //
@@ -205,6 +206,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBComputer.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBComputer;
+                LogoString = "Computer";
             }
         });
 
@@ -218,6 +220,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBEconomy.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBEconomy;
+                LogoString = "Economy";
             }
         });
 
@@ -231,6 +234,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBEngineering.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBEngineering;
+                LogoString = "Engineering";
             }
         });
 
@@ -244,6 +248,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBEnglish.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBEnglish;
+                LogoString = "English";
             }
         });
 
@@ -257,6 +262,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBMedicalScience.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBMedicalScience;
+                LogoString = "MedicalScience";
             }
         });
 
@@ -270,6 +276,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBBiology.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBBiology;
+                LogoString = "Biology";
             }
         });
 
@@ -283,6 +290,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBBusiness.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBBusiness;
+                LogoString = "Business";
             }
         });
 
@@ -296,6 +304,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBChemistry.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBChemistry;
+                LogoString = "Chemistry";
             }
         });
 
@@ -309,6 +318,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBFinance.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBFinance;
+                LogoString = "Finance";
             }
         });
 
@@ -322,6 +332,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBPhysics.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBPhysics;
+                LogoString = "Physics";
             }
         });
 
@@ -335,6 +346,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBLaw.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBLaw;
+                LogoString = "Law";
             }
         });
 
@@ -348,6 +360,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBMath.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBMath;
+                LogoString = "Math";
             }
         });
 
@@ -361,6 +374,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBMusic.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBMusic;
+                LogoString = "Music";
             }
         });
 
@@ -374,6 +388,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBPerformance.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBPerformance;
+                LogoString = "Performance";
             }
         });
 
@@ -387,6 +402,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBArt.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBArt;
+                LogoString = "Art";
             }
         });
 
@@ -400,6 +416,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBDrawingAndPainting.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBDrawingAndPainting;
+                LogoString = "DrawingAndPainting";
             }
         });
 
@@ -413,6 +430,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBPsychology.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBPsychology;
+                LogoString = "Psychology";
             }
         });
 
@@ -426,6 +444,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBAgriculture.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBAgriculture;
+                LogoString = "Agriculture";
             }
         });
 
@@ -439,6 +458,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBAnimalScience.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBAnimalScience;
+                LogoString = "AnimalScience";
             }
         });
 
@@ -452,6 +472,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBAnimationDesign.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBAnimationDesign;
+                LogoString = "AnimationDesign";
             }
         });
 
@@ -465,6 +486,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBArchitecture.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBArchitecture;
+                LogoString = "Architecture";
             }
         });
 
@@ -477,7 +499,8 @@ public class Subject extends AppCompatActivity {
                     TempLogo.setBackgroundResource(android.R.drawable.btn_default);
                 }
                 IBArchitecture.setBackgroundColor(Color.parseColor(ColorString));
-                TempLogo = IBArchitecture;
+                TempLogo = IBAstronomy;
+                LogoString = "Astronomy";
             }
         });
 
@@ -491,6 +514,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBAutomobile.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBAutomobile;
+                LogoString = "Automobile";
             }
         });
 
@@ -504,6 +528,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBCultureStudy.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBCultureStudy;
+                LogoString = "CultureStudy";
             }
         });
 
@@ -517,6 +542,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBDatabase.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBDatabase;
+                LogoString = "Database";
             }
         });
 
@@ -530,6 +556,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBEducation.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBEducation;
+                LogoString = "Education";
             }
         });
 
@@ -543,6 +570,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBEnvironmentalScience.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBEnvironmentalScience;
+                LogoString = "EnvironmentalScience";
             }
         });
 
@@ -556,6 +584,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBFilm.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBFilm;
+                LogoString = "Film";
             }
         });
 
@@ -569,6 +598,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBFood.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBFood;
+                LogoString = "Food";
             }
         });
 
@@ -582,6 +612,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBHealth.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBHealth;
+                LogoString = "Health";
             }
         });
 
@@ -595,6 +626,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBHistory.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBHistory;
+                LogoString = "History";
             }
         });
 
@@ -608,6 +640,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBHorticulture.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBHorticulture;
+                LogoString = "Horticulture";
             }
         });
 
@@ -621,6 +654,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBInvestment.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBInvestment;
+                LogoString = "Investment";
             }
         });
 
@@ -634,6 +668,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBLanguage.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBLanguage;
+                LogoString = "Language";
             }
         });
 
@@ -647,6 +682,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBLiterature.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBLiterature;
+                LogoString = "Literature";
             }
         });
 
@@ -660,6 +696,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBManagement.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBManagement;
+                LogoString = "Management";
             }
         });
 
@@ -673,6 +710,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBNewsAndMedia.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBNewsAndMedia;
+                LogoString = "NewsAndMedia";
             }
         });
 
@@ -686,6 +724,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBPhilosophy.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBPhilosophy;
+                LogoString = "Philosophy";
             }
         });
 
@@ -699,6 +738,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBPhotography.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBPhotography;
+                LogoString = "Photography";
             }
         });
 
@@ -712,6 +752,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBPolitics.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBPolitics;
+                LogoString = "Politics";
             }
         });
 
@@ -725,6 +766,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBSocialScience.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBSocialScience;
+                LogoString = "SocialScience";
             }
         });
 
@@ -738,6 +780,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBSpeaking.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBSpeaking;
+                LogoString = "Speaking";
             }
         });
 
@@ -751,6 +794,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBStatistics.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBStatistics;
+                LogoString = "Statistics";
             }
         });
 
@@ -764,6 +808,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBTheater.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBTheater;
+                LogoString = "Theater";
             }
         });
 
@@ -777,6 +822,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBTrading.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBTrading;
+                LogoString = "Trading";
             }
         });
 
@@ -790,6 +836,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBUrbanPlanning.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBUrbanPlanning;
+                LogoString = "UrbanPlanning";
             }
         });
 
@@ -803,6 +850,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBWebPageDesign.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBWebPageDesign;
+                LogoString = "WebPageDesign";
             }
         });
 
@@ -816,6 +864,7 @@ public class Subject extends AppCompatActivity {
                 }
                 IBWriting.setBackgroundColor(Color.parseColor(ColorString));
                 TempLogo = IBWriting;
+                LogoString = "Writing";
             }
         });
 
@@ -825,16 +874,10 @@ public class Subject extends AppCompatActivity {
         CreateSubject.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //convert image to byte
-                Bitmap bitmap = ((BitmapDrawable) TempLogo.getDrawable()).getBitmap();
-                ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
-                byte[] UserSubjectLogo = baos.toByteArray();
-                //
                 //insert subject information
                 UserSubjectId = SubjectDb.getLatestId() + 1;
                 UserSubjectName = ETSubjectName.getText().toString();
-                SubjectDb.insertSubject(UserSubjectName, UserSubjectLogo);
+                SubjectDb.insertSubject(UserSubjectName, LogoString, LogoBackString);
                 //
                 openCreateSubject();
             }
@@ -857,7 +900,6 @@ public class Subject extends AppCompatActivity {
         Toast t = Toast.makeText(getApplicationContext(), "添加完成！", Toast.LENGTH_SHORT);
         t.show();
         intent.putExtra("SubjectId", UserSubjectId);
-        intent.putExtra("LogoBackgroundColor", LogoBack);
         setResult(6, intent);
         finish();
     }
