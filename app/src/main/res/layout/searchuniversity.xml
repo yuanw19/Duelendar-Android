@@ -51,12 +51,2529 @@
                     android:layout_height="55dp">
 
                     <Button
-                        android:id="@+id/button"
+                        android:id="@+id/BAmherst"
                         android:layout_width="300dp"
                         android:layout_height="50dp"
                         android:layout_centerInParent="true"
                         android:background="#40FFFFFF"
-                        android:text="Button"
+                        android:contentDescription="@string/BAmherst"
+                        android:text="@string/BAmherst"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BAmsterdan"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BAmsterdan"
+                        android:text="@string/BAmsterdan"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BLowa"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BLowa"
+                        android:text="@string/BLowa"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BElon"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BElon"
+                        android:text="@string/BElon"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BEmory"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BEmory"
+                        android:text="@string/BEmory"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BBaylor"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BBaylor"
+                        android:text="@string/BBaylor"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUPenn"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUPenn"
+                        android:text="@string/BUPenn"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BPennState"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BPennState"
+                        android:text="@string/BPennState"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BPomona"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BPomona"
+                        android:text="@string/BPomona"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BBU"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BBU"
+                        android:text="@string/BBU"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BBC"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BBC"
+                        android:text="@string/BBC"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BBerklee"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BBerklee"
+                        android:text="@string/BBerklee"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BBinghamton"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BBinghamton"
+                        android:text="@string/BBinghamton"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BBowdoinCollege"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BBowdoinCollege"
+                        android:text="@string/BBowdoinCollege"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUNorthCarolinaChapelHill"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUNorthCarolinaChapelHill"
+                        android:text="@string/BUNorthCarolinaChapelHill"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BNorthCarolinaState"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BNorthCarolinaState"
+                        android:text="@string/BNorthCarolinaState"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BBrandies"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BBrandies"
+                        android:text="@string/BBrandies"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BBrown"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BBrown"
+                        android:text="@string/BBrown"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BDartmouth"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BDartmouth"
+                        android:text="@string/BDartmouth"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUDenver"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUDenver"
+                        android:text="@string/BUDenver"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BDavidson"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BDavidson"
+                        android:text="@string/BDavidson"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BTexasAM"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BTexasAM"
+                        android:text="@string/BTexasAM"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUAustin"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUAustin"
+                        android:text="@string/BUAustin"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BTexasChristian"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BTexasChristian"
+                        android:text="@string/BTexasChristian"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BNEU"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BNEU"
+                        android:text="@string/BNEU"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BDuke"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BDuke"
+                        android:text="@string/BDuke"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BTulane"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BTulane"
+                        android:text="@string/BTulane"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BOhioState"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BOhioState"
+                        android:text="@string/BOhioState"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BVanderbilt"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BVanderbilt"
+                        android:text="@string/BVanderbilt"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUFlorida"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUFlorida"
+                        android:text="@string/BUFlorida"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BFloridaState"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BFloridaState"
+                        android:text="@string/BFloridaState"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUVirginia"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUVirginia"
+                        android:text="@string/BUVirginia"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BVT"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BVT"
+                        android:text="@string/BVT"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BColumbia"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BColumbia"
+                        android:text="@string/BColumbia"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BGongzaga"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BGongzaga"
+                        android:text="@string/BGongzaga"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BHarvard"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BHarvard"
+                        android:text="@string/BHarvard"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUWashington"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUWashington"
+                        android:text="@string/BUWashington"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUWSL"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUWSL"
+                        android:text="@string/BUWSL"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BCIT"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BCIT"
+                        android:text="@string/BCIT"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUCBerkeley"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUCBerkeley"
+                        android:text="@string/BUCBerkeley"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUCDavis"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUCDavis"
+                        android:text="@string/BUCDavis"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUCI"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUCI"
+                        android:text="@string/BUCI"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUCLA"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUCLA"
+                        android:text="@string/BUCLA"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUCRiverside"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUCRiverside"
+                        android:text="@string/BUCRiverside"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUCSantaCruz"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUCSantaCruz"
+                        android:text="@string/BUCSantaCruz"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUCSB"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUCSB"
+                        android:text="@string/BUCSB"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUCSD"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUCSD"
+                        android:text="@string/BUCSD"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BSanFranciscoConservatoryOfMusic"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BSanFranciscoConservatoryOfMusic"
+                        android:text="@string/BSanFranciscoConservatoryOfMusic"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BCarleton"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BCarleton"
+                        android:text="@string/BCarleton"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BCaseWesternReserve"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BCaseWesternReserve"
+                        android:text="@string/BCaseWesternReserve"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BClaremontMckenna"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BClaremontMckenna"
+                        android:text="@string/BClaremontMckenna"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BClark"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BClark"
+                        android:text="@string/BClark"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BClemson"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BClemson"
+                        android:text="@string/BClemson"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BCMU"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BCMU"
+                        android:text="@string/BCMU"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BColoradoMines"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BColoradoMines"
+                        android:text="@string/BColoradoMines"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BConnecticut"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BConnecticut"
+                        android:text="@string/BConnecticut"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BCornell"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BCornell"
+                        android:text="@string/BCornell"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BLehigh"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BLehigh"
+                        android:text="@string/BLehigh"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BRenssslaer"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BRenssslaer"
+                        android:text="@string/BRenssslaer"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BRice"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BRice"
+                        android:text="@string/BRice"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BRochester"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BRochester"
+                        android:text="@string/BRochester"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BRutgers"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BRutgers"
+                        android:text="@string/BRutgers"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUMarylandPark"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUMarylandPark"
+                        android:text="@string/BUMarylandPark"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUMassAmherst"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUMassAmherst"
+                        android:text="@string/BUMassAmherst"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BMIT"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BMIT"
+                        android:text="@string/BMIT"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUMiami"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUMiami"
+                        android:text="@string/BUMiami"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BManhattanSchoolOfMusic"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BManhattanSchoolOfMusic"
+                        android:text="@string/BManhattanSchoolOfMusic"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BMarquette"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BMarquette"
+                        android:text="@string/BMarquette"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BMiami"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BMiami"
+                        android:text="@string/BMiami"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BAU"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BAU"
+                        android:text="@string/BAU"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUMichiganArbor"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUMichiganArbor"
+                        android:text="@string/BUMichiganArbor"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BMichiganState"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BMichiganState"
+                        android:text="@string/BMichiganState"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BMiddlebury"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BMiddlebury"
+                        android:text="@string/BMiddlebury"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUMinnesodaTwinCities"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUMinnesodaTwinCities"
+                        android:text="@string/BUMinnesodaTwinCities"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUSC"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUSC"
+                        android:text="@string/BUSC"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUB"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUB"
+                        android:text="@string/BUB"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BNYU"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BNYU"
+                        android:text="@string/BNYU"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BPepperdine"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BPepperdine"
+                        android:text="@string/BPepperdine"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BPrinceton"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BPrinceton"
+                        android:text="@string/BPrinceton"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BPurdue"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BPurdue"
+                        android:text="@string/BPurdue"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUPittsburgh"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUPittsburgh"
+                        android:text="@string/BUPittsburgh"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BGeorgeWashington"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BGeorgeWashington"
+                        android:text="@string/BGeorgeWashington"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BGeorgetown"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BGeorgetown"
+                        android:text="@string/BGeorgetown"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUSanDiego"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUSanDiego"
+                        android:text="@string/BUSanDiego"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BNotreDame"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BNotreDame"
+                        android:text="@string/BNotreDame"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BSantaClara"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BSantaClara"
+                        android:text="@string/BSantaClara"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BStanford"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BStanford"
+                        android:text="@string/BStanford"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BStonyBrook"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BStonyBrook"
+                        android:text="@string/BStonyBrook"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BSwarthmore"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BSwarthmore"
+                        android:text="@string/BSwarthmore"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BTufts"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BTufts"
+                        android:text="@string/BTufts"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BDelaware"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BDelaware"
+                        android:text="@string/BDelaware"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUWMadison"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUWMadison"
+                        android:text="@string/BUWMadison"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BVillanova"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BVillanova"
+                        android:text="@string/BVillanova"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BWakeForrest"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BWakeForrest"
+                        android:text="@string/BWakeForrest"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BWellesley"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BWellesley"
+                        android:text="@string/BWellesley"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BWilliamAndMary"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BWilliamAndMary"
+                        android:text="@string/BWilliamAndMary"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BWilliams"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BWilliams"
+                        android:text="@string/BWilliams"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BWPI"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BWPI"
+                        android:text="@string/BWPI"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BNWU"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BNWU"
+                        android:text="@string/BNWU"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BNewEnglandConservatory"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BNewEnglandConservatory"
+                        android:text="@string/BNewEnglandConservatory"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BNJIT"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BNJIT"
+                        android:text="@string/BNJIT"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BSyracuse"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BSyracuse"
+                        android:text="@string/BSyracuse"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BBYU"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BBYU"
+                        android:text="@string/BBYU"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BYale"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BYale"
+                        android:text="@string/BYale"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BYeshiva"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BYeshiva"
+                        android:text="@string/BYeshiva"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BIndianaBloomington"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BIndianaBloomington"
+                        android:text="@string/BIndianaBloomington"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUIUC"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUIUC"
+                        android:text="@string/BUIUC"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BJHU"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BJHU"
+                        android:text="@string/BJHU"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BChicago"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BChicago"
+                        android:text="@string/BChicago"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BJulliard"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BJulliard"
+                        android:text="@string/BJulliard"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BGIT"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BGIT"
+                        android:text="@string/BGIT"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BEdinburgh"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BEdinburgh"
+                        android:text="@string/BEdinburgh"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BBristol"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BBristol"
+                        android:text="@string/BBristol"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUCL"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUCL"
+                        android:text="@string/BUCL"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BKings"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BKings"
+                        android:text="@string/BKings"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BImperial"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BImperial"
+                        android:text="@string/BImperial"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BLSE"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BLSE"
+                        android:text="@string/BLSE"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BWarwick"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BWarwick"
+                        android:text="@string/BWarwick"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BRoyalAcademyOfMusic"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BRoyalAcademyOfMusic"
+                        android:text="@string/BRoyalAcademyOfMusic"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BCambridge"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BCambridge"
+                        android:text="@string/BCambridge"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BManchester"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BManchester"
+                        android:text="@string/BManchester"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BOxford"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BOxford"
+                        android:text="@string/BOxford"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUBC"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUBC"
+                        android:text="@string/BUBC"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUToronto"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUToronto"
+                        android:text="@string/BUToronto"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BMcGill"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BMcGill"
+                        android:text="@string/BMcGill"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BNanyang"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BNanyang"
+                        android:text="@string/BNanyang"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BNUS"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BNUS"
+                        android:text="@string/BNUS"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BAustralianNational"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BAustralianNational"
+                        android:text="@string/BAustralianNational"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BQueensland"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BQueensland"
+                        android:text="@string/BQueensland"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BMonash"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BMonash"
+                        android:text="@string/BMonash"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUMelbourne"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUMelbourne"
+                        android:text="@string/BUMelbourne"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUNSW"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUNSW"
+                        android:text="@string/BUNSW"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUSydeney"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUSydeney"
+                        android:text="@string/BUSydeney"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUOsaka"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUOsaka"
+                        android:text="@string/BUOsaka"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUTokyo"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUTokyo"
+                        android:text="@string/BUTokyo"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BTokyoIT"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BTokyoIT"
+                        android:text="@string/BTokyoIT"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUKyoto"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUKyoto"
+                        android:text="@string/BUKyoto"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUBuenos"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUBuenos"
+                        android:text="@string/BUBuenos"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUCopenhagen"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUCopenhagen"
+                        android:text="@string/BUCopenhagen"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUMunich"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUMunich"
+                        android:text="@string/BUMunich"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUMunichIT"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUMunichIT"
+                        android:text="@string/BUMunichIT"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUVanderbelt"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUVanderbelt"
+                        android:text="@string/BUVanderbelt"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BLomonosovMoscowState"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BLomonosovMoscowState"
+                        android:text="@string/BLomonosovMoscowState"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BPSLParis"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BPSLParis"
+                        android:text="@string/BPSLParis"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BEcolePolytechnique"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BEcolePolytechnique"
+                        android:text="@string/BEcolePolytechnique"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BPohang"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BPohang"
+                        android:text="@string/BPohang"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BKAIST"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BKAIST"
+                        android:text="@string/BKAIST"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUSeoul"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUSeoul"
+                        android:text="@string/BUSeoul"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUKorea"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUKorea"
+                        android:text="@string/BUKorea"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BTUDelft"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BTUDelft"
+                        android:text="@string/BTUDelft"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUMalaya"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUMalaya"
+                        android:text="@string/BUMalaya"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BEPFL"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BEPFL"
+                        android:text="@string/BEPFL"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <Button
+                        android:id="@+id/BUZurich"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="#40FFFFFF"
+                        android:contentDescription="@string/BUZurich"
+                        android:text="@string/BUZurich"
                         android:textColor="#FFFFFF"
                         android:textColorLink="#FFFFFF" />
                 </RelativeLayout>

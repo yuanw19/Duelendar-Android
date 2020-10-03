@@ -563,15 +563,15 @@
     <string name="BElon">美国埃隆大学</string>
     <string name="BEmory">美国埃默里大学</string>
     <string name="BBaylor">美国贝勒大学</string>
-    <string name="BUNorthCarolinaChapelHill">美国麻省理工学院</string>
     <string name="BUPenn">美国宾夕法尼亚大学</string>
     <string name="BPennState">美国宾夕法尼亚州立大学</string>
     <string name="BPomona">美国波莫纳学院</string>
-    <string name="BBU">美国波士顿学院</string>
+    <string name="BBU">美国波士顿大学</string>
     <string name="BBC">美国波士顿学院</string>
     <string name="BBerklee">美国伯克利音乐学院</string>
-    <string name="BBinghamton">美国伯克利音乐学院</string>
+    <string name="BBinghamton">美国宾汉顿大学</string>
     <string name="BBowdoinCollege">美国鲍登学院</string>
+    <string name="BUNorthCarolinaChapelHill">美国北卡罗拉大学教堂山分校</string>
     <string name="BNorthCarolinaState">美国北卡罗来纳州立大学</string>
     <string name="BBrandies">美国布兰迪斯大学</string>
     <string name="BBrown">美国布朗大学</string>
@@ -581,13 +581,13 @@
     <string name="BTexasAM">美国德州农工大学</string>
     <string name="BUAustin">美国德克萨斯大学奥斯汀分校</string>
     <string name="BTexasChristian">美国德克萨斯基督教大学</string>
-    <string name="BDuke">美国杜克大学</string>
     <string name="BNEU">美国东北大学</string>
+    <string name="BDuke">美国杜克大学</string>
     <string name="BTulane">美国杜兰大学</string>
     <string name="BOhioState">美国俄亥俄州立大学</string>
     <string name="BVanderbilt">美国范德堡大学</string>
-    <string name="BUFLorida">美国佛罗里达大学</string>
-    <string name="BFLoridaState">美国佛罗里达州立大学</string>
+    <string name="BUFlorida">美国佛罗里达大学</string>
+    <string name="BFloridaState">美国佛罗里达州立大学</string>
     <string name="BUVirginia">美国弗吉尼亚大学</string>
     <string name="BVT">美国弗吉尼亚理工学院</string>
     <string name="BColumbia">美国哥伦比亚大学</string>
@@ -633,10 +633,13 @@
     <string name="BUMinnesodaTwinCities">美国明尼苏达大学双城校区</string>
     <string name="BUSC">美国南加州大学</string>
     <string name="BUB">美国纽约大学水牛城分校</string>
+    <string name="BNYU">美国纽约大学</string>
     <string name="BPepperdine">美国佩珀代因大学</string>
     <string name="BPrinceton">美国普林斯顿大学</string>
     <string name="BPurdue">美国普渡大学</string>
     <string name="BUPittsburgh">美国匹茨堡大学</string>
+    <string name="BGeorgeWashington">美国乔治华盛顿大学</string>
+    <string name="BGeorgetown">美国乔治城大学</string>
     <string name="BUSanDiego">美国圣地亚哥大学</string>
     <string name="BNotreDame">美国圣母大学</string>
     <string name="BSantaClara">美国圣塔克拉拉大学</string>
@@ -645,8 +648,6 @@
     <string name="BSwarthmore">美国斯沃斯莫尔学院</string>
     <string name="BTufts">美国塔夫茨大学</string>
     <string name="BDelaware">美国特拉华大学</string>
-    <string name="BGeorgeWashington">美国乔治华盛顿大学</string>
-    <string name="BGeorgetown">美国乔治城大学</string>
     <string name="BUWMadison">美国威斯康星大学麦迪逊分校</string>
     <string name="BVillanova">美国维拉诺瓦大学</string>
     <string name="BWakeForrest">美国维克森林大学</string>
@@ -654,7 +655,7 @@
     <string name="BWilliamAndMary">美国威廉玛丽大学</string>
     <string name="BWilliams">美国威廉姆斯学院</string>
     <string name="BWPI">美国伍斯特理工学院</string>
-    <string name="BNYU">美国西北大学</string>
+    <string name="BNWU">美国西北大学</string>
     <string name="BNewEnglandConservatory">美国新英格兰音乐学院</string>
     <string name="BNJIT">美国新泽西理工学院</string>
     <string name="BSyracuse">美国雪城大学</string>
@@ -688,7 +689,34 @@
     <string name="BNUS">新加坡国立大学</string>
 
     <string name="BAustralianNational">澳大利亚国立大学</string>
+    <string name="BQueensland">澳大利亚昆士兰大学</string>
+    <string name="BMonash">澳大利亚蒙纳士大学</string>
+    <string name="BUMelbourne">澳大利亚墨尔本大学</string>
+    <string name="BUNSW">澳大利亚新南威尔士大学</string>
+    <string name="BUSydeney">澳大利亚悉尼大学</string>
 
+    <string name="BUOsaka">日本大阪大学</string>
+    <string name="BUTokyo">日本东京大学</string>
+    <string name="BTokyoIT">日本东京理科大学</string>
+    <string name="BUKyoto">日本京都大学</string>
+
+    <string name="BUBuenos">阿根廷布宜诺斯艾利斯大学</string>
+    <string name="BUCopenhagen">丹麦哥本哈根大学</string>
+
+    <string name="BUMunich">德国慕尼黑大学</string>
+    <string name="BUMunichIT">德国慕尼黑工业大学</string>
+    <string name="BUVanderbelt">德国范德堡大学</string>
+    <string name="BLomonosovMoscowState">俄罗斯莫斯科国立大学</string>
+    <string name="BPSLParis">法国巴黎科学艺术人文大学</string>
+    <string name="BEcolePolytechnique">法国巴黎综合理工学院</string>
+    <string name="BPohang">韩国浦项科技大学</string>
+    <string name="BKAIST">韩国科学技术院</string>
+    <string name="BUSeoul">韩国首尔大学</string>
+    <string name="BUKorea">韩国高丽大学</string>
+    <string name="BTUDelft">荷兰代尔夫特理工大学</string>
+    <string name="BUMalaya">马来西亚马来亚大学</string>
+    <string name="BEPFL">瑞士洛桑联邦理工学院</string>
+    <string name="BUZurich">瑞士苏黎世大学</string>
 
 
 
