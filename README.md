@@ -6,5 +6,5 @@ international students who go back
 to their home countries like me
 automatically convert homework
 due dates to their timezone.
-This is the ios version app,
-checkout the anroid version in another repo.
+This is the Android version,
+checkout the IOS version in another repo.
